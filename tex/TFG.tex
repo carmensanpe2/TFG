@@ -1,5 +1,8 @@
 \documentclass[12pt,a4paper,twoside,titlepage]{report}
 \usepackage{mi_estilo}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter}{20pt}{\huge}
+\titlespacing*{\chapter}{0pt}{10pt}{15pt}
 
 \begin{document}
 	\pagenumbering{roman}
@@ -7,4 +10,8 @@
 	\tableofcontents
 	\listoffigures
 	\input{abstract.tex}
+	\input{objetivos.tex}
+	\input{c1_intro.tex}
+	\pagenumbering{arabic}
+	\input{bibliografia.tex}
 \end{document}

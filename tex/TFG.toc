@@ -1,3 +1,0 @@
-\babel@toc {spanish}{}
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{chapter*.2}%
-\contentsline {chapter}{Resumen/Abstract}{\es@scroman {vi}}{chapter*.3}%
