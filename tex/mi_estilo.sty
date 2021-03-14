@@ -46,7 +46,8 @@
 \usepackage[nottoc]{tocbibind}
 
 % BibTeX
-\bibliographystyle{doc/myIEEEtran}
+%\bibliographystyle{doc/myIEEEtran}
+\bibliographystyle{abbrv}
 
 
 % chapters formatx
@@ -59,7 +60,7 @@
 \patchcmd{\@makechapterhead}{40\p@}{\chapheadbelowskip}{}{}% Space between CHAPTER TITLE and text
 % --- Patch \chapter*
 \patchcmd{\@makeschapterhead}{50\p@}{\chapheadtopskip}{}{}% Space from top of page to CHAPTER TITLE
-\patchcmd{\@makeschapterhead}{40\p@}{\chapheadbelowskip}{}{}% SPace between CHAPTER TITLE and text
+\patchcmd{\@makeschapterhead}{40\p@}{\chapheadbelowskip}{}{}% Space between CHAPTER TITLE and text
 \makeatother
 % Set new lengths
 \newlength{\chapheadtopskip}\setlength{\chapheadtopskip}{0pt}
