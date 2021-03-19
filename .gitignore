@@ -4,4 +4,10 @@
 *.toc
 pdf*
 *.tex.bak
+*.bbl
+*.out
+*.lof
+*.blg
 svg-inkscape
+svg-extract
+*.pdf
