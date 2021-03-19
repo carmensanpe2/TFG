@@ -1,8 +1,25 @@
 \begin{thebibliography}{1}
 
-\bibitem{Nature1}
-G.~D. Rochester and C.~C. Butler.
-\newblock {Evidence for the existence of new unstable elementary particles}.
-\newblock {\em Nature}, 160(4077):855--857, dec 1947.
+\bibitem{Bardeen2012}
+William~A. Bardeen.
+\newblock {Kaons - A micro-physics laboratory - "Will you still need me when
+  I'm 64?" (the beatles)}.
+\newblock {\em Progress of Theoretical Physics Supplement}, (197):128--135,
+  2012.
+
+\bibitem{notas2020}
+Departamento de~FAMN.
+\newblock {Apuntes, notas y material did{\'{a}}ctico de la asignatura de
+  F{\'{i}}sica Nuclear y de Part{\'{i}}culas}, 2020.
+
+\bibitem{Griffiths2008}
+D.~J. Griffiths.
+\newblock {\em {Griffiths Introduction to Elementary Particles 1st}}.
+\newblock 2008.
+
+\bibitem{tanabashi}
+M.~Tanabashi~et al.
+\newblock {Particle Data Group}.
+\newblock {\em Phys. Rev.}, D 98, 0300:22--35, 2018.
 
 \end{thebibliography}
