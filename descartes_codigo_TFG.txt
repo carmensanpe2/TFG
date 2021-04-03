@@ -1,0 +1,23 @@
+Cosas descartadas dek Apéndice del TFG
+- T. Lorentz:
+
+%Los postulados son:
+
+%\begin{itemize}
+%\item Todos los sistemas de referencia inerciales (SRI) son equivalentes.
+%\item La velocidad de la luz en el vacío \textbf{c} es la velocidad máxima y por tanto, es invariante respecto a cualquier SRI. 
+%\end{itemize}
+
+%Se considera un SRI $O$ fijo con una fuente luminosa en su origen que empieza a emitir luz en $t=0$. La distancia que ha recorrido la luz en un tiempo $t$ viene dada por:
+
+%\begin{equation*}
+%x^2+y^2+z^2=c^2t^2
+%\end{equation*}
+
+%Considerando otro SR $O'$  que se desplaza con velocidad $v$ respecto de $O$. La distancia que ha recorrido la luz en un tiempo $t'$ viene dada por:
+
+%\begin{equation*}
+%x'^2+y'^2+z'^2=c^2t'^2
+%\end{equation*}
+
+%En $t=t'=0$ ambos orígenes coinciden.
