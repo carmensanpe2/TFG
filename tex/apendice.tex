@@ -15,9 +15,68 @@ Denotando $\beta=v/c$ y $\gamma=\sqrt{1-v^2/c^2}$, reescribimos las LT como:
 x' &= \gamma(x-\beta ct) & y' &=y & z' &=z & t' &=\gamma \left(t-\dfrac{\beta x}{c}\right) \label{eq:TLorentz2}
 \end{align}
 
-\section{Cuadrivectores y notación covariante}\label{cap:four-vectors}
-\vspace{5mm}
+\section{Cuadrivectores}\label{cap:four-vectors}
+La forma más sencilla de expresar las LT es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar facilmente qué magnitudes son invariantes frente a las LT (formulación covariante).
+\begin{align}
+(ct,x, y, z) &=(x^0, x^1, x^2, x^3)=X^\mu & (E,cp_x, cp_y, cp_z) &=(p^0, p^1, p^2, p^3)=P^\mu
+\end{align}
+Hay dos tipos de cuadrivectores:
+\begin{itemize}
+\item Contravariante (índice arriba): $X^\mu=(x^0, x^1, x^2, x^3)=(x^0,\textbf{x}) \rightarrow (t,\textbf{x})$
+\item Covariante (índice abajo): $X_\mu=(x_0, x_1, x_2, x_3)=(x^0,-\textbf{x}) \rightarrow (t,-\textbf{x})$
+\end{itemize} 
+Para relacionarlos, se usa el tensor métrico $g_{\mu\nu}$ que define la métrica del espacio-tiempo de Minkowski.
+\begin{align}
+A_{\mu } &=\sum ^{3}_{\nu =0}g_{\mu \nu }A^{\nu} \equiv g_{\mu \nu }A^{\nu} & A^{\mu } &=\sum ^{3}_{\nu =0}g^{\mu \nu }A_{\nu} \equiv g^{\mu \nu }A_{\nu}
+\end{align}
+con $g_{\mu\nu} = g^{\mu\nu}$, siendo:
+\begin{equation*}
+g_{\mu\nu} = 
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix}
+1 & & &  \\
+& -1 & & \\
+& & -1 & \\
+& & & -1
+\end{pmatrix}
+\endgroup
+\end{equation*}
+Por lo tanto, las LT para las componentes contravariantes y covariantes, respectivamente, pueden expresarse tal que así:
+\begin{align}
+X'^{\mu } &=\Lambda\indices{^\mu _\nu}X^\nu & X'_{\mu } &=\Lambda\indices{_\mu ^\nu}X_\nu
+\end{align}
 
-Los cuadrivectores o tetravectores 
+\section{Ecuación de Dirac}\label{cap:Dirac}
+Dirac quería hallar una ecuación linear en $t$ que tratase las variables espaciales y temporales en forma simétrica, que tuviera la norma conservada definida positiva (lo que implica que $\widehat{H}$ sea hermítico) y que fuera covariante.\cite{MCR} Así se llegó a esta expresión:
 
-\section{Ecuación de Dirac. Matrices y spinores de Dirac}\label{cap:Dirac}
+\begin{equation}
+i\partial _{t}\psi =-i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \psi +\beta M\psi \equiv\widehat{H}\psi
+\end{equation}
+Donde los coeficientes $\alpha_i$ y $\beta$ son matrices. En la representación más común (la de Dirac-Pauli), los coeficientes son:
+\begin{align*}
+\alpha _{i}=
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} 
+0 & \boldsymbol{\sigma_{i}} \\ \boldsymbol{\sigma_{i}} & 0 \end{pmatrix} \qquad
+\beta =\begin{pmatrix} \mathbb{1} & 0 \\ 0 & -\mathbb{1} \end{pmatrix}
+\endgroup
+\end{align*}
+siendo las \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
+\begin{align*}
+\sigma _{x}=
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} 
+0 & 1 \\ 1 & 0 \end{pmatrix} \qquad \sigma_y
+\begin{pmatrix} 
+0 & -i \\ i & 0 \end{pmatrix} \qquad
+\sigma_z =\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\endgroup
+\end{align*}
+
+\subsection{Matrices y espinores de Dirac en notación covariante}\label{cap:matrix_spinors}
