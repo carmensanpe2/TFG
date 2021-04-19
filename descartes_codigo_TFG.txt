@@ -21,3 +21,16 @@ Cosas descartadas dek Apéndice del TFG
 %\end{equation*}
 
 %En $t=t'=0$ ambos orígenes coinciden.
+
+%Denotando $\beta=v/c$ y $\gamma=\sqrt{1-v^2/c^2}$, reescribimos las LT como:
+%\begin{align}
+%x' &= \gamma(x-\beta ct) & y' &=y & z' &=z & t' &=\gamma \left(t-\dfrac{\beta x}{c}\right) \label{eq:TLorentz2}
+%\end{align}
+
+%\section{Cuadrivectores}\label{cap:four-vectors}
+%\subsection{Matrices y espinores de Dirac en notación covariante}\label{cap:matrix_spinors}
+Dirac quería hallar una ecuación linear en $t$ que tratase las variables espaciales y temporales en forma simétrica, que tuviera la norma conservada definida positiva (lo que implica que $\widehat{H}$ sea hermítico) y que fuera covariante \cite{MCR}. Así se llegó a esta expresión:
+\left(\boldsymbol{\alpha} \cdot \boldsymbol{\hat{p}} + \beta M \right)\Psi
+Donde se ha usado $\boldsymbol{\hat{p}}=-i\vec{\nabla}$ 
+
+Las soluciones de la ecuación de Dirac para partículas libres se conocen como espinores de Dirac (autovectores de espín) \cite{MCR}. El espinor $u(\boldsymbol{\vec{p}},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{\vec{p}},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
