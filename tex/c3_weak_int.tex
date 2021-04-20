@@ -1,6 +1,5 @@
 \chapter{Interacción Débil}\label{cap:weak_int}
-
-El origen de cada interacción fundamental se debe a causas diferentes. Por un lado, la existencia de carga eléctrica produce fuerzas electromagnéticas en las partículas y las hace interactuar entre sí, mientras que las interacciones fuertes se deben a la propiedad del color, mencionada en el capítulo anterior. No todas las partículas tienen carga ni color simultáneamente por lo que no todas son susceptibles a las mismas interacciones. El caso de la interacción débil es bastante interesante porque muchas partículas con propiedades distintas son sensibles a ella. Por ejemplo, los leptones no tienen carga de color, no ``sienten'' la interacción fuerte; pero los neutrinos no tienen carga eléctrica por lo que no pueden interactuar mediante fuerzas electromagnéticas. Sin embargo, ambos tipos de partículas pueden estar presentes en interacciones débiles.\cite{Griffiths2008} Además, la causa de la interacción débil, aunque no tiene un nombre específico, comúnmente se denota como \textit{carga débil}.
+El origen de cada interacción fundamental se debe a causas diferentes. Por un lado, la existencia de carga eléctrica produce fuerzas electromagnéticas en las partículas y las hace interactuar entre sí, mientras que la interacción fuerte se debe a la propiedad del color, mencionada en el capítulo anterior. No todas las partículas tienen carga ni color simultáneamente por lo que no todas son susceptibles a las mismas interacciones. El caso de la interacción débil es bastante interesante porque muchas partículas con propiedades distintas son sensibles a ella. Por ejemplo, los leptones no tienen carga de color, no ``sienten'' la interacción fuerte; pero los neutrinos no tienen carga eléctrica por lo que no pueden interactuar mediante fuerzas electromagnéticas. Sin embargo, ambos tipos de partículas pueden estar presentes en interacciones débiles.\cite{Griffiths2008} Además, la causa de la interacción débil, aunque no tiene un nombre específico, comúnmente se denota como \textit{carga débil}.
 
 Los mesones $K$ y muchas otras partículas decaen por interacción débil. Desde el principio se consideró un tratamiento cuántico-relativista para su descripción y muchos científicos han contribuido al desarrollo de su formalismo. Cada interacción ocurre gracias al intercambio de una partícula mediadora o portadora de la fuerza de interacción. En la interacción fuerte es el gluón y en la electromagnética es el fotón. Sin embargo, en lo que respecta a la interacción débil, esas partículas mediadoras encargadas de transmitir la fuerza débil entre los quarks y leptones, son los bosones vectoriales, llamados así porque tienen espín 1. Debido a su gran masa, se tiene en consecuencia que la interacción débil es de muy corto alcance. Estos bosones portadores de la fuerza débil pueden ser cargados $W^{\pm}$ o neutros $Z^0$, dependiendo de las partículas que participan en el proceso. 
 
@@ -9,8 +8,36 @@ Hasta la década de los 70, sólo se habían observado procesos de intercambio d
 Este capítulo se centra, principalmente, en la descripción de procesos de interacción débil cargados con intercambio de bosones $W^{\pm}$ y nos servirá como base para el estudio del decaimiento de mesones $K$ cargados.
 
 \section{Formalismo de la Interacción Débil}\label{cap:formalism}
-\subsection{Los campos y su cuantización}\label{cap:quantization}
-De acuerdo con la Teoría Cuántica de Campos (TCC), cada partícula lleva asociado un campo $\phi(x)$, $\psi(x)$ o $W_{\mu}(x)$ que son funciones que dependen del espacio y del tiempo $x^{\mu}=(ct,\boldsymbol{\vec{x}})$. 
+\subsection{Interacciones en Teoría Cuántica de Campos}\label{cap:qft}
+De acuerdo con la Teoría Cuántica de Campos (TCC), cada partícula lleva asociado un campo cuántico $\phi(x)$, $\psi(x)$ o $W_{\mu}(x)$, que depende del espacio y del tiempo $x^{\mu}=(ct,\boldsymbol{\vec{x}})$. Estos campos $\phi(x)$, $\psi(x)$ o $W_{\mu}(x)$ actúan como operadores encargados de aniquilar partículas o crear antipartículas de espín $0$, $1/2 $ y $1$, respectivamente \cite{notas2020}.
+  
+Para describir la evolución espacio-temporal de dichos campos asociados a partículas se hace uso de la densidad lagrangiana $\mathcal{L}$. Esta $\mathcal{L}$ debe ser un escalar, por lo que sólo se permiten combinaciones entre campos que resulten en invariantes de Lorentz. \cite{notas2020} Para las distintas partículas y sin tener en cuenta la interacción, en el sistema natural de unidades ($c=\hbar =1$), $\mathcal{L}$ tiene las siguientes expresiones:
+\begin{itemize}
+\item Bosones de espín $0$, tales como los mesones $K$ o los piones:
+\end{itemize}
+\begin{equation*}
+\mathcal{L}=-\partial ^{\mu }\phi \left( x\right) ^{\ast }\partial_{\mu} \phi \left( x\right) -m^{2}\phi \left( x\right) ^{\ast }\phi \left( x\right)
+\end{equation*}
+El campo $\phi$ tiene carácter escalar y es responsable de (crear) aniquilar (anti)partículas con $J=0$. $\phi^{\ast}$ es su campo conjugado y hace justo lo opuesto: crea partículas y aniquila antipartículas con $J=0$.
+\begin{itemize}
+\item Fermiones de espín $1/2$, como los leptones:
+\end{itemize}
+\begin{equation*}
+\mathcal{L}=-\overline{\psi }\left( x\right) \left( \slashed{\partial}+m\right) \psi \left( x\right)
+\end{equation*}
+$\psi$ tiene carácter de espinor y (crea) aniquila (anti)partículas con $J=1/2$. Su adjunto también hace lo contrario.
+\begin{itemize}
+\item Bosones de espín $1$, como son los fotones o los bosones vectoriales $W$:
+\end{itemize}
+\begin{equation*}
+\mathcal{L}=-\dfrac{1}{4}\left| \partial _{\mu }W^{\nu }\left( x\right) -\partial _{\nu }W^{\mu }\left( x\right) \right| ^{2}-\dfrac{1}{2}m^{2}\left| W^{\mu }\left( x\right) \right| ^{2}
+\end{equation*}
+
+Por último, $W^{\mu}$ posee carácter de cuadrivector y se encarga de crear antipartículas y aniquilar partículas con $J=1$, mientras que su conjugado hace, nuevamente, lo opuesto.
+
+Por otro lado, la TCC también describe las interacciones mediante campos cuánticos
+
+
 \subsection{Teoría de la Perturbación}\label{cap:perturbation_theory}
 
 \section{Decaimiento de mesones $K$ cargados}

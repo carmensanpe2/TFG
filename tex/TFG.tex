@@ -5,13 +5,21 @@
 \titlespacing*{\chapter}{0pt}{10pt}{15pt}
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 
+
 \begin{document}
+	\renewcommand{\listtablename}{Índice de tablas}
 	\pagenumbering{roman}
 	\input{portada}
 	\tableofcontents
 	\listoffigures
+	\addcontentsline{toc}{chapter}{Índice de figuras y tablas}
+	\begingroup
+	\let\clearpage\relax
+	\listoftables
+	\endgroup
 	\input{abstract}
 	\input{objetivos}
+	\clearpage
 	\pagenumbering{arabic}
 	\input{c1_intro}
 	\input{c2_strangeness}

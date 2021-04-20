@@ -12,7 +12,7 @@ Las \textit{Transformaciones de Lorentz} (LT) son las expresiones matemáticas e
 x' &= \dfrac{x-vt}{\sqrt{1-v^2/c^2}} & y' &=y & z' &=z & t' &=\dfrac{t-xv/c^2}{\sqrt{1-v^2/c^2}}\label{eq:TLorentz1}
 \end{align}
 
-La forma más sencilla de expresar las LT es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar fácilmente qué magnitudes son escalares, es decir, invariantes frente a las LT (formulación covariante)\cite{MCR}.
+La forma más sencilla de expresar las LT es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar fácilmente qué magnitudes son escalares, es decir, invariantes frente a las LT (formulación covariante) \cite{MCR}.
 \begin{align}
 (ct,x, y, z) &=(x^0, x^1, x^2, x^3)=X^\mu & (E,cp_x, cp_y, cp_z) &=(p^0, p^1, p^2, p^3)=P^\mu
 \end{align}
@@ -57,7 +57,7 @@ En general, $\Lambda\indices{^\mu _\nu} \neq \Lambda\indices{_\mu ^\nu}$.  Graci
 \section{Ecuación de Dirac: Matrices y espinores}\label{cap:Dirac}
 La ecuación de Dirac es una función de onda relativista que permite describir partículas fermiónicas ($s=1/2$). En el sistema natural de unidades $c=\hbar =1$, tiene esta expresión:
 \begin{equation}
-i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta M\Psi \equiv\widehat{H}\Psi \label{eq:Dirac}
+i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta m\Psi \equiv\widehat{H}\Psi \label{eq:Dirac}
 \end{equation}
 Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\footnote{La representación de Dirac-Pauli es la más común, pero otras representaciones son posibles, como la que hace uso de la base de Weyl.} dichas matrices son:
 \begin{align*}
@@ -99,7 +99,7 @@ Las matrices de Dirac $\gamma^{\mu}$ satisfacen la relación de anticonmutación
 
 Entonces la ecuación de Dirac, sabiendo que $\beta^2=\mathbb{1}$, se reformula como \cite{MCR}:
 \begin{equation}
-i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -M\Psi =0\label{eq:ecDirac_cov}
+i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0\label{eq:ecDirac_cov}
 \end{equation}
 Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynmann} \cite{MCR}, definimos el siguiente operador:
 \begin{equation*}
@@ -107,11 +107,11 @@ Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynm
 \end{equation*}
 Por lo que la ecuación de Dirac resulta:
 \begin{equation}
-\left(i \slashed{\partial}-M\right) \Psi =0\label{eq:Dirac_final}
+\left(i \slashed{\partial}-m\right) \Psi =0\label{eq:Dirac_final}
 \end{equation}
-Asimismo, para partículas libres, usando que $\widehat{P}^{\mu} \rightarrow i\partial^{\mu} \Rightarrow \slashed{\widehat{P}} \rightarrow i\slashed{\partial}$ \cite{MCR}, la ecuación de Dirac queda:
+Asimismo, para partículas libres, usando que $\widehat{p}^{\mu} \rightarrow i\partial^{\mu} \Rightarrow \slashed{\widehat{p}} \rightarrow i\slashed{\partial}$ \cite{MCR}, la ecuación de Dirac queda:
 \begin{equation}
-\left( \slashed{\widehat{P}}-M\right) \Psi =0\label{eq:Dirac_free}
+\left( \slashed{\widehat{p}}-m\right) \Psi =0\label{eq:Dirac_free}
 \end{equation}
 
 Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se representa como un autovector de 4 componentes pero que puede expresarse en términos de dos autovectores de espín, conocidos como espinores de Dirac\cite{MCR}. 
@@ -119,23 +119,24 @@ Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se represen
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
 \setlength\arraycolsep{10pt}
-\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{\vec{p}},s) \\ v(\boldsymbol{\vec{p}},s) \end{pmatrix}; \qquad u(\boldsymbol{\vec{p}},s)=\begin{pmatrix} u_{1} \\ u_{2} \end{pmatrix} \qquad
-v(\boldsymbol{\vec{p}},s)=\begin{pmatrix} v_{1} \\ v_{2}\label{eq:espinores} \end{pmatrix}
+\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} u_{1} \\ u_{2} \end{pmatrix} \qquad
+v(\boldsymbol{p},s)=\begin{pmatrix} v_{1} \\ v_{2}\label{eq:espinores} \end{pmatrix}
 \endgroup
 \end{align}
-El espinor $u(\boldsymbol{\vec{p}},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{\vec{p}},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
+El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
 
-Los espinores $u(\boldsymbol{\vec{p}},s)$ y $v(\boldsymbol{\vec{p}},s)$ y sus conjugados cumplen la ecuación de Dirac \cite{Donelly}:
+Los espinores $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$ y sus conjugados cumplen la ecuación de Dirac \cite{Donelly}:
 \begin{align*}
-(\slashed{p}-m)u(\boldsymbol{\vec{p}},s) &=0 & (\slashed{p}+m)v(\boldsymbol{\vec{p}},s) &=0 \\
-\overline{u}(\boldsymbol{\vec{p}},s)(\slashed{p}-m) &=0 & \overline{v}(\boldsymbol{\vec{p}},s )(\slashed{p}+m)&=0
+(\slashed{p}-m)u(\boldsymbol{p},s) &=0 & (\slashed{p}+m)v(\boldsymbol{p},s) &=0 \\
+\overline{u}(\boldsymbol{p},s)(\slashed{p}-m) &=0 & \overline{v}(\boldsymbol{p},s )(\slashed{p}+m)&=0
 \end{align*}
-La normalización de espinores es \cite{Paschos}:
+La normalización de espinores es \cite{MCR}:
 \begin{align*}
-\overline{u}(\boldsymbol{\vec{p}},s)u(\boldsymbol{\vec{p}},s) &= 2m & \overline{v}(\boldsymbol{\vec{p}},s)v(\boldsymbol{\vec{p}},s) &= -2m
+\overline{u}(\boldsymbol{p},s)u(\boldsymbol{p},s) &= 1 & \overline{v}(\boldsymbol{p},s)v(\boldsymbol{p},s) &= -1
 \end{align*}
-Finalmente, también satisfacen las siguientes relaciones \cite{Paschos}:
-\begin{align*}
-\sum_s u(\boldsymbol{\vec{p}},s)\overline{u}(\boldsymbol{\vec{p}},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{\vec{p}},s)\overline{v}(\boldsymbol{\vec{p}},s) &= (\slashed{p}-m)
-\end{align*}
+Y la relación de completitud \cite{MCR}:  %a \cite{Paschos}:
+\begin{equation*}
+\sum _{s}\left| u_{\alpha }\left(\boldsymbol{p},s\right) \overline{u}_{\beta }\left(\boldsymbol{p},s\right) -v_{\alpha }\left(\boldsymbol{p},s\right) \overline{v}_{\beta }\left(\boldsymbol{p},s\right) \right| =\delta _{\alpha \beta }
+\end{equation*}
 
+%\sum_s u(\boldsymbol{p},s)\overline{u}(\boldsymbol{p},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{p},s)\overline{v}(\boldsymbol{p},s) &= (\slashed{p}-m)
