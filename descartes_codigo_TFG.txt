@@ -34,3 +34,4 @@ Dirac quería hallar una ecuación linear en $t$ que tratase las variables espac
 Donde se ha usado $\boldsymbol{\hat{p}}=-i\vec{\nabla}$ 
 
 Las soluciones de la ecuación de Dirac para partículas libres se conocen como espinores de Dirac (autovectores de espín) \cite{MCR}. El espinor $u(\boldsymbol{\vec{p}},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{\vec{p}},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
+
