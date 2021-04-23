@@ -33,5 +33,10 @@ Dirac quería hallar una ecuación linear en $t$ que tratase las variables espac
 \left(\boldsymbol{\alpha} \cdot \boldsymbol{\hat{p}} + \beta M \right)\Psi
 Donde se ha usado $\boldsymbol{\hat{p}}=-i\vec{\nabla}$ 
 
-Las soluciones de la ecuación de Dirac para partículas libres se conocen como espinores de Dirac (autovectores de espín) \cite{MCR}. El espinor $u(\boldsymbol{\vec{p}},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{\vec{p}},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
+Las soluciones de la ecuación de Dirac para partículas libres se conocen como espinores de Dirac (autovectores de espín) \cite{MCR}. 
+El espinor $u(\boldsymbol{\vec{p}},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{\vec{p}},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. 
+Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
 
+La Interacción Débil se dio a conocer, entre otros procesos, gracias a la emisión $\beta$: decaimiento de un protón del núcleo en un neutrón(o viceversa) y en un par leptón-neutrino electrónico. 
+La desintegración beta se produce a causa de la interacción débil, y en la explicación ofrecida por la Teoría de Fermi, a grandes rasgos, se indica que la evolución del decaimiento puede describirse en términos de un hamiltoniano que incluye la constante de acoplo de Fermi $G_F$. 
+Aunque la Teoría de Fermi se queda obsoleta al trabajar con interacciones que suceden a energías muy altas, esta constante de Fermi $G_F$ sigue siendo válida pues proporciona información sobre la fuerza de la interacción y se ha comprobado que su valor es único para todos los procesos donde interviene la interacción débil, siendo este $G_F=1,166 \cdot 10^-5 GeV^{−2}$. Por otro lado, $g_W$ es la constante de acoplo de la interacción débil y se relaciona con la constante de Fermi $G_F$ a través de la siguiente expresión:
