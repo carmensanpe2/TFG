@@ -77,12 +77,43 @@ j_{\mu }^{-el}\left(x\right)&=i\overline{\psi}_{e}\left( x\right) \dfrac{1-\gamm
 \end{align}
 La corriente negativa $j_{\mu }^{-el}$, aniquila $\nu_e$ (o crea $\overline{\nu_e}$) y crea $e^-$ (o aniquila $e^+$), mientras que la corriente positiva $j_{\mu }^{+el}$ hace justo lo opuesto. $j_{\mu }^{\pm muon}$ y $j_{\mu }^{\pm tau}$ pueden definirse de manera análoga. Estas corrientes leptónicas se caracterizan por conservar el número cuántico leptónico y la carga de las partículas que intervienen.
 
+El operador $\gamma^5$ tiene dos autoestados $\pm 1$, asociados cada uno a la quiralidad positiva o negativa, respectivamente. La quiralidad es una propiedad estrechamente relacionada con la helicidad de las partículas...
+
+El operador de corriente hadrónica $j_{\mu} ^{\pm had}$ es el encargado de crear o aniquilar hadrones, conservando siempre el número bariónico $B$ e incrementando o reduciendo en una unidad la carga eléctrica total $Q$. Sin embargo, aunque no siempre, también son capaces de modificar la extrañeza: la corriente hadrónica positiva (negativa) puede aumentar (disminuir) la extrañeza en una unidad $\Delta S = +1$ ($\Delta S = -1$) \cite{notas2020}.
+
 Además, $g_W$ es la constante de acoplo de la interacción débil y se relaciona con la constante de Fermi $G_F$ según \ref{eq:fermi_coupling}. Experimentalmente se ha comprobado que $G_F$ tiene un valor único para todos los procesos donde interviene la interacción débil, siendo este $G_{F}=1,166 \cdot 10^{-5}$ $GeV^{−2}$ 
 \begin{equation}
 \dfrac{G_{F}}{g_{w}}=\dfrac{\sqrt{2}}{8m_{w}}\label{eq:fermi_coupling}
 \end{equation}
 
 \subsection{Interacción débil en el Modelo de Quarks}\label{sec:weak_int_quarks}
+En el modelo de Quarks, la interacción débil se representa también mediante Diagramas de Feynmann pero esta vez se explica por medio de un cambio de sabor en los quarks, emitiendo a su vez bosones $W^{\pm}$. Según si un proceso de interacción débil, modifica o no su extrañeza, se describe en términos de la corriente hadrónica:
+\begin{itemize}
+\item Si no cambia la extrañeza: se aniquila un quark $d$ y se crea un quark $u$.
+\end{itemize}
+\begin{equation*}
+j_{\mu}^{+had}(\Delta S= 0)=\cos \left( \theta _{c}\right) i\overline{\psi }_{u}\left( x\right) \dfrac{1-\gamma _{5}}{2}\gamma _{\mu }\psi _{d}
+\end{equation*}
+\begin{itemize}
+\item Si se modifica la extrañeza: se aniquila un quark $s$ y se crea un quark $u$.
+\end{itemize}
+\begin{equation*}
+j_{\mu}^{+had}(\Delta S= 0)=\sin \left( \theta _{c}\right) i\overline{\psi }_{u}\left( x\right) \dfrac{1-\gamma _{5}}{2}\gamma _{\mu }\psi _{s}
+\end{equation*}
+
+En la interacción débil, el sabor $u$, de carga $+2/3$ se conecta con los otros dos sabores débiles mediante $d\cdot \cos \left( \theta _{c}\right) +s\cdot \sin \left( \theta _{c}\right)$, donde $\theta _{c}$ hace referencia al ángulo de Cabbibo, cuyo valor experimental ha resultado ser $13,02\degree$. Del mismo modo, Cabbibo planteó que debería otro quark con la misma carga que $u$ pero que se conectara con la combinación ortogonal $-d\cdot \sin \left( \theta _{c}\right) +s\cdot \cos \left( \theta c\right)$, prediciendo así el quark pesado $c$.
+
+Posteriormente, se concluyó que, en la interacción débil, todos los sabores de quarks, pesados y ligeros, debían estar conectados mediante la  \textit{matriz CKM} (Cabibbo-Kobayashi-Maskawa). La importancia de esta matriz recae en sus términos diagonales, conectando: $u\leftrightarrow d$, $c\leftrightarrow s$ y $t\leftrightarrow b$. Los términos no diagonales son los responsables de que los quarks pesados vayan decayendo progresivamente en los sabores ligeros $u$ y $d$, que son los constituyentes predominantes de la materia ordinaria. La expresión de la matriz CKM es:
+\begin{align}
+d' &= V_{ud}\cdot d+V_{us}\cdot s + V_{ub}\cdot b \nonumber \\
+s' &= V_{cd}\cdot d+V_{cs}\cdot s + V_{cb}\cdot b \\
+b' &= V_{td}\cdot d+V_{ts}\cdot s + V_{tb}\cdot b \nonumber\label{eq:CKM_matrix}
+\end{align}
+
+
+\begin{equation}
+W_{if}= \dfrac{2\pi }{\hbar }\left| \langle i\right| \widehat{H'}| f\rangle| ^{2}\rho \left( E\right)
+\end{equation}
 
 \subsection{Teoría Electrodébil}\label{sec:electroweak}
 
