@@ -8,7 +8,7 @@ Hasta la década de los 70, sólo se habían observado procesos de intercambio d
 Este capítulo se centra, principalmente, en la descripción de procesos de interacción débil con intercambio de bosones $W^{\pm}$ o procesos de in\textit{teracción débil de corriente cargada} y nos servirá como base para el estudio del decaimiento de mesones $K$ cargados.
 
 \section{Formalismo de la Interacción Débil}\label{cap:formalism}
-\subsection{Interacciones en Teoría Cuántica de Campos}\label{sec:qft}
+\subsection{Teoría Cuántica de Campos: Interacción V-A}\label{sec:QFT}
 De acuerdo con la Teoría Cuántica de Campos (TCC), cada partícula lleva asociado un campo cuántico $\phi(x)$, $\psi(x)$ o $W_{\mu}(x)$, dependiente del espacio y del tiempo $x^{\mu}=(ct,\boldsymbol{\vec{x}})$\protect\footnotemark. Estos campos $\phi(x)$, $\psi(x)$ o $W_{\mu}(x)$ actúan como operadores encargados de aniquilar partículas o crear antipartículas de espín $0$, $1/2 $ y $1$, respectivamente \cite{notas2020}.
 
 \footnotetext{Consultar el Apéndice \hyperref[cap:A]{A} para más información sobre la notación utilizada en este capítulo.}
@@ -54,7 +54,7 @@ Del mismo modo, las interacciones se describen mediante unas constantes, denomin
 \label{fig:bettini}
 \end{figure}
 
-Continuando con el ejemplo anterior, Bettini indica que el bosón mediador $V$ tiene, en general, una masa $m$ no nula, lo que provoca que, durante su emisión, se viole momentáneamente la conservación de energía $\Delta E = m$. Lo mismo, pero de forma opuesta ocurre durante su absorción. Así pues, la violación neta dura un $\Delta t$ y satisface \textit{El Principio de Incertidumbre de Heisenberg}: $\Delta E \Delta t \leq \hbar$, lo que implica que $V$ sólo puede alejarse una distancia finita $R=c\Delta t$. Esta distancia equivale al rango de la fuerza de interacción, por lo tanto, cuanta mayor masa tenga el bosón mediador de una interacción, menor será su rango de alcance \cite{Bettini}. Dado que los bosones mediadores $W^{\pm}$ y $Z^0$ tienen una masa muy grande ($m_W=80,379 \pm 0,012$ GeV y $m_Z=91,1876 \pm 0,0021$ GeV, respectivamente \cite{Zyla}), la interacción débil tiene un alcance muy corto, más que cualquier otra interacción fundamental; de ahí la denominación de ``débil''. 
+Continuando con el ejemplo anterior, Bettini indica que el bosón mediador $V$ tiene, en general, una masa $m$ no nula, lo que provoca que, durante su emisión, se viole momentáneamente la conservación de energía $\Delta E = m$. Lo mismo, pero de forma opuesta ocurre durante su absorción. Así pues, la violación neta dura un $\Delta t$ y satisface la \textit{Relación de Indeterminación tiempo-energía}: $\Delta E \Delta t \leq \hbar$, lo que implica que $V$ sólo puede alejarse una distancia finita $R=c\Delta t$. Esta distancia equivale al rango de la fuerza de interacción, por lo tanto, cuanta mayor masa tenga el bosón mediador de una interacción, menor será su rango de alcance \cite{Bettini}. Dado que los bosones mediadores $W^{\pm}$ y $Z^0$ tienen una masa muy grande ($m_W=80,379 \pm 0,012$ GeV y $m_Z=91,1876 \pm 0,0021$ GeV, respectivamente \cite{Zyla}), la interacción débil tiene un alcance muy corto, más que cualquier otra interacción fundamental; de ahí la denominación de ``débil''. 
 
 Gráficamente, las interacciones se representan con Diagramas de Feynmann. Estos diagramas proporcionan información acerca de la amplitud de probabilidad de los distintos procesos, donde cada línea representa a una partícula y cada vértice corresponde a cada actuación del lagrangiano de la interacción $\mathcal{L}$. Las líneas externas corresponden a partículas reales, mientras que las internas, que conectan los vértices, representan partículas virtuales, conocidas como propagadores o mediadores. El propagador es la partícula que se crea y aniquila; la que media la interacción. \cite{notas2020} En nuestro ejemplo anterior, dicho propagador sería el bosón $V$  y en el caso de la interacción débil, los propagadores serían los bosones vectoriales $W^{\pm}$ o $Z^0$.
 
@@ -77,14 +77,33 @@ j_{\mu }^{-el}\left(x\right)&=i\overline{\psi}_{e}\left( x\right) \dfrac{1-\gamm
 \end{align}
 La corriente negativa $j_{\mu }^{-el}$, aniquila $\nu_e$ (o crea $\overline{\nu_e}$) y crea $e^-$ (o aniquila $e^+$), mientras que la corriente positiva $j_{\mu }^{+el}$ hace justo lo opuesto. $j_{\mu }^{\pm muon}$ y $j_{\mu }^{\pm tau}$ pueden definirse de manera análoga. Estas corrientes leptónicas se caracterizan por conservar el número cuántico leptónico y la carga de las partículas que intervienen.
 
-El operador $\gamma^5$ tiene dos autoestados $\pm 1$, asociados cada uno a la quiralidad positiva o negativa, respectivamente. Cuando las partículas fermiónicas tienen una velocidad próxima a la de la luz, la quiralidad se relaciona con su helicidad. El factor $\dfrac{1-\gamma^5}{2}$ es responsable de que sólo los leptones con quiralidad negativa reaccionen a la interacción débil y explica por qué, en ocasiones, hay una violación de paridad P y CP en la interacción débil, tal y como se detallará en el capítulo siguiente.
-
 El operador de corriente hadrónica $j_{\mu} ^{\pm had}$ es el encargado de crear o aniquilar hadrones, conservando siempre el número bariónico $B$ e incrementando o reduciendo en una unidad la carga eléctrica total $Q$. Sin embargo, aunque no siempre, también son capaces de modificar la extrañeza: la corriente hadrónica positiva (negativa) puede aumentar (disminuir) la extrañeza en una unidad $\Delta S = +1$ ($\Delta S = -1$) \cite{notas2020}.
 
 Además, $g_W$ es la constante de acoplo de la interacción débil y se relaciona con la constante de Fermi $G_F$ según \ref{eq:fermi_coupling}. Experimentalmente se ha comprobado que $G_F$ tiene un valor único para todos los procesos donde interviene la interacción débil, siendo este $G_{F}=1,166 \cdot 10^{-5}$ $GeV^{−2}$.
 \begin{equation}
 \dfrac{G_{F}}{g_{w}}=\dfrac{\sqrt{2}}{8m_{w}}\label{eq:fermi_coupling}
 \end{equation}
+
+\subsubsection{Helicidad y Quiralidad}\label{sec:quirality}
+
+En las expresiones anteriores de la corriente débil leptónica aparece el operador $\gamma^5$. Este operador indica la quiralidad de las partículas y, a menudo, es confundido con la helicidad. Por este motivo es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada propiedad en esta sección.
+
+La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco teórico de la TCC, la helicidad de la partícula se representa mediante el operador helicidad $\mathcal{H}$:
+\begin{equation}
+\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{\sigma}}{p}
+\end{equation} 
+
+Para una partícula fermiónica (de espín $1/2$), los autovalores de $\mathcal{H}$ son $+1/2$, si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ en el caso caso contrario \cite{Bettini}. Así pues, los autoestados de helicidad se corresponden a espinores de dos componentes. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
+
+La quiralidad es una propiedad de los bi-espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo o (R) y negativo (L), y sus proyectores son:
+\begin{align*}
+\psi_L &= \dfrac{1-\gamma^5}{2}\psi & \psi_R &= \dfrac{1+\gamma^5}{2}\psi
+\end{align*}
+
+El factor $\dfrac{1-\gamma^5}{2}$ es responsable de que sólo los leptones con quiralidad negativa reaccionen a la interacción débil y explica por qué, en esta interacción, pueden violarse P y CP, tal y como se detallará en el capítulo siguiente.
+
+A diferencia de la helicidiad, la quiralidad es siempre un invariante de Lorentz. Sin embargo, cuando la partícula fermiónica carece de masa, helicidad y quiralidad coinciden.
+ 
 
 \subsection{Interacción débil en el Modelo de Quarks}\label{sec:weak_int_quarks}
 En el modelo de Quarks, la interacción débil se describe también mediante Diagramas de Feynmann pero esta vez se representa por medio de un cambio de sabor en los quarks, emitiendo a su vez bosones $W^{\pm}$. Según si un proceso de interacción débil, modifica o no su extrañeza, la expresión de corriente hadrónica puede variar:
