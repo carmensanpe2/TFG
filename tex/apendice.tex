@@ -5,6 +5,8 @@
 \renewcommand{\thesection}{A.\arabic{section}}
 \setcounter{table}{0}
 \renewcommand{\thetable}{A.\arabic{table}}
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A.\arabic{equation}}
 
 \section{Transformaciones de Lorentz y Cuadrivectores}\label{sec:Lorentz}
 Las \textit{Transformaciones de Lorentz} (LT) son las expresiones matemáticas encargadas de relacionar un suceso observado desde dos sistemas de referencia inerciales distintos, en base a los postulados de la Teoría de Relatividad Especial. Son las siguientes:
@@ -28,7 +30,7 @@ Para relacionarlos, se usa el tensor métrico $g_{\mu\nu}$ que define la métric
 A_{\mu } &=\sum ^{3}_{\nu =0}g_{\mu \nu }A^{\nu} \equiv g_{\mu \nu }A^{\nu} & A^{\mu } &=\sum ^{3}_{\nu =0}g^{\mu \nu }A_{\nu} \equiv g^{\mu \nu }A_{\nu} \label{eq:metrica}
 \end{align}
 con $g_{\mu\nu} = g^{\mu\nu}$, siendo:
-\begin{equation*}
+\begin{equation}
 g_{\mu\nu} = 
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
@@ -40,7 +42,7 @@ g_{\mu\nu} =
 & & & -1
 \end{pmatrix}
 \endgroup
-\end{equation*}
+\end{equation}
 Además, se cumple lo siguiente:
 \begin{itemize}
 \item Norma de un cuadrivector $X^\mu$: $X^{2}=X^{\mu }X_{\mu }=X_{\mu }X^{\mu }=x_{0}^{2}-\boldsymbol{x}^{2}$
@@ -52,9 +54,9 @@ Por lo tanto, las LT para las componentes contravariantes y covariantes, respect
 X'^{\mu } &=\Lambda\indices{^\mu _\nu}X^\nu & X'_{\mu } &=\Lambda\indices{_\mu ^\nu}X_\nu \label{eq:LTcovariant}
 \end{align}
 En general, $\Lambda\indices{^\mu _\nu} \neq \Lambda\indices{_\mu ^\nu}$.  Gracias a todo esto, se pueden definir los siguientes operadores:
-\begin{align*}
+\begin{align}
 \partial _{\mu} &= \dfrac{\partial}{\partial x^{\mu}}=\left( \dfrac{\partial }{c\partial t},\vec{\nabla} \right) & \partial ^{\mu } &= \dfrac{\partial }{\partial x_{\mu }}=\left( \dfrac{\partial }{c\partial t},-\vec{\nabla} \right) & \partial ^{\mu }\partial _{\mu }&= \dfrac{\partial ^{2}}{c^{2}\partial t^{2}}-\nabla ^{2} \equiv\square
-\end{align*}
+\end{align}
 
 \section{Ecuación de Dirac: Matrices y espinores}\label{sec:Dirac}
 La ecuación de Dirac es una función de onda relativista que permite describir partículas fermiónicas ($s=1/2$). En el sistema natural de unidades $c=\hbar =1$, tiene esta expresión:
@@ -62,7 +64,7 @@ La ecuación de Dirac es una función de onda relativista que permite describir 
 i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta m\Psi \equiv\widehat{H}\Psi \label{eq:Dirac}
 \end{equation}
 Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\footnote{La representación de Dirac-Pauli es la más común, pero otras representaciones son posibles, como la que hace uso de la base de Weyl.} dichas matrices son:
-\begin{align*}
+\begin{align}
 \alpha _{i}=
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
@@ -71,9 +73,9 @@ Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\fo
 0 & \boldsymbol{\sigma_{i}} \\ \boldsymbol{\sigma_{i}} & 0 \end{pmatrix} \qquad
 \beta =\begin{pmatrix} \mathbb{1} & 0 \\ 0 & -\mathbb{1} \end{pmatrix}
 \endgroup
-\end{align*}
+\end{align}
 siendo las \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
-\begin{align*}
+\begin{align}
 \sigma _{x}=
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
@@ -84,7 +86,7 @@ siendo las \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
 0 & -i \\ i & 0 \end{pmatrix} \qquad
 \sigma_z =\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 \endgroup
-\end{align*}
+\end{align}
 
 A partir de los coeficientes anteriores y utilizando notación en cuadrivectores, se obtienen las \textit{Matrices de Dirac} o \textit{Matrices Gamma}  $\gamma^{\mu}=(\gamma^0, \boldsymbol{\gamma^{i}})=(\gamma^0, \gamma^1, \gamma^2, \gamma^3)$:
 \begin{align}
@@ -104,9 +106,9 @@ Entonces la ecuación de Dirac, sabiendo que $\beta^2=\mathbb{1}$, se reformula 
 i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0\label{eq:ecDirac_cov}
 \end{equation}
 Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynmann} \cite{MCR}, definimos el siguiente operador:
-\begin{equation*}
+\begin{equation}
 \slashed{\partial}=\gamma ^{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla
-\end{equation*}
+\end{equation}
 Por lo que la ecuación de Dirac resulta:
 \begin{equation}
 \left(i \slashed{\partial}-m\right) \Psi =0\label{eq:Dirac_final}
@@ -128,18 +130,20 @@ v(\boldsymbol{p},s)=\begin{pmatrix} v_{1} \\ v_{2}\label{eq:espinores} \end{pmat
 El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
 
 Los espinores $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$ y sus conjugados cumplen la ecuación de Dirac \cite{Donelly}:
-\begin{align*}
+\begin{equation}
+\begin{aligned}
 (\slashed{p}-m)u(\boldsymbol{p},s) &=0 & (\slashed{p}+m)v(\boldsymbol{p},s) &=0 \\
 \overline{u}(\boldsymbol{p},s)(\slashed{p}-m) &=0 & \overline{v}(\boldsymbol{p},s )(\slashed{p}+m)&=0
-\end{align*}
+\end{aligned}
+\end{equation}
 La normalización de espinores es \cite{MCR}:
-\begin{align*}
+\begin{align}
 \overline{u}(\boldsymbol{p},s)u(\boldsymbol{p},s) &= 1 & \overline{v}(\boldsymbol{p},s)v(\boldsymbol{p},s) &= -1
-\end{align*}
+\end{align}
 Y la relación de completitud \cite{MCR}:  %a \cite{Paschos}:
-\begin{equation*}
+\begin{equation}
 \sum _{s}\left| u_{\alpha }\left(\boldsymbol{p},s\right) \overline{u}_{\beta }\left(\boldsymbol{p},s\right) -v_{\alpha }\left(\boldsymbol{p},s\right) \overline{v}_{\beta }\left(\boldsymbol{p},s\right) \right| =\delta _{\alpha \beta }
-\end{equation*}
+\end{equation}
 
 Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamma^5$, cuya expresión en la representación de Dirac es:
 \begin{equation}
@@ -147,20 +151,20 @@ Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamm
 \end{equation}
 %\equiv \gamma_5
 
-\subsection{Covariantes bilineales}\label{sec:trazas}
-Los covariantes bilineales $\hat{\Gamma}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
+\subsubsection{Covariantes bilineales}\label{sec:trazas}
+Los covariantes bilineales $\widehat{\Gamma}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l*{8}{c}r}
 \hline
-Expresiones de $\hat{\Gamma}$  & Carácter & Nº. Matrices\\ 
+Expresiones de $\widehat{\Gamma}$  & Carácter & Nº. Matrices\\ 
 \hline
-$\hat{\Gamma}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
-$\hat{\Gamma}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
-$\hat{\Gamma}^{T}_{\mu\nu} = \hat{\sigma}_{\mu\nu}-\hat{\sigma}_{\nu\mu}$ & Tensorial (T) & 6\\
-$\hat{\Gamma}_{\mu}^{A} = \gamma_{5}\gamma_{\mu}$ & Vector axial (A) & 4\\
-$\hat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
+$\widehat{\Gamma}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
+$\widehat{\Gamma}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
+$\widehat{\Gamma}^{T}_{\mu\nu} = \hat{\sigma}_{\mu\nu}-\hat{\sigma}_{\nu\mu}$ & Tensorial (T) & 6\\
+$\widehat{\Gamma}_{\mu}^{A} = \gamma_{5}\gamma_{\mu}$ & Vector axial (A) & 4\\
+$\widehat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
 \hline
 	\end{tabular}
 \caption[Covariantes bilineales]{Covariantes bilineales. \cite{MCR}, \cite{GreinerRQM}}
