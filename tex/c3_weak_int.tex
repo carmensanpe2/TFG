@@ -55,7 +55,8 @@ Del mismo modo, las interacciones se describen mediante unas constantes, denomin
 \label{fig:bettini}
 \end{figure}
 
-Continuando con el ejemplo anterior, Bettini indica que el bosón mediador $V$ tiene, en general, una masa $m$ no nula, lo que provoca que, durante su emisión, se viole momentáneamente la conservación de energía $\Delta E = m$. Lo mismo, pero de forma opuesta ocurre durante su absorción. Así pues, la violación neta dura un $\Delta t$ y satisface la \textit{Relación de Indeterminación tiempo-energía}: $\Delta E \Delta t \leq \hbar$, lo que implica que $V$ sólo puede alejarse una distancia finita $R=c\Delta t$. Esta distancia equivale al rango de la fuerza de interacción, por lo tanto, cuanta mayor masa tenga el bosón mediador de una interacción, menor será su rango de alcance \cite{Bettini}. Dado que los bosones mediadores $W^{\pm}$ y $Z^0$ tienen una masa muy grande ($m_W=80,379 \pm 0,012$ GeV y $m_Z=91,1876 \pm 0,0021$ GeV, respectivamente \cite{Zyla}), la interacción débil tiene un alcance muy corto, más que cualquier otra interacción fundamental; de ahí la denominación de ``débil''. 
+Continuando con el ejemplo anterior, Bettini indica que el bosón mediador $V$ tiene, en general, una masa $m$ no nula, lo que provoca que, durante su emisión, se viole momentáneamente la conservación de energía $\Delta E = m$. Lo mismo, pero de forma opuesta ocurre durante su absorción. Así pues, la violación neta dura un $\Delta t$ y satisface la \textit{Relación de Indeterminación tiempo-energía}: $\Delta E \Delta t \leq \hbar$, lo que implica que $V$ sólo puede alejarse una distancia finita $R=c\Delta t$. Esta distancia equivale al rango de la fuerza de interacción, por lo tanto, cuanta mayor masa tenga el bosón mediador de una interacción, menor será su rango de alcance \cite{Bettini}. Dado que los bosones mediadores $W^{\pm}$ y $Z^0$ tienen una masa muy grande ($m_W = \SI{80,379 \pm 0,012}{\GeV}$ GeV y $m_Z = \SI{91,1876 \pm 0,0021}{\GeV}$, respectivamente \cite{Zyla}), la interacción débil tiene un alcance muy corto, más que cualquier otra interacción fundamental; de ahí la denominación de ``débil''.
+
 
 Gráficamente, las interacciones se representan con Diagramas de Feynmann. Estos diagramas proporcionan información acerca de la amplitud de probabilidad de los distintos procesos, donde cada línea representa a una partícula y cada vértice corresponde a cada actuación del lagrangiano de la interacción $\mathcal{L}$. Las líneas externas corresponden a partículas reales, mientras que las internas, que conectan los vértices, representan partículas virtuales, conocidas como propagadores o mediadores. El propagador es la partícula que se crea y aniquila; la que media la interacción. \cite{notas2020} En nuestro ejemplo anterior, dicho propagador sería el bosón $V$ y en el caso de la interacción débil, los propagadores serían los bosones vectoriales $W^{\pm}$ o $Z^0$.
 
@@ -79,9 +80,9 @@ La corriente negativa $j_{\mu }^{-el}$, aniquila $\nu_e$ (o crea $\overline{\nu_
 
 El operador de corriente hadrónica $j_{\mu} ^{\pm had}$ es el encargado de crear o aniquilar hadrones, conservando siempre el número bariónico $B$ e incrementando o reduciendo en una unidad la carga eléctrica total $Q$. Sin embargo, aunque no siempre, también son capaces de modificar la extrañeza: la corriente hadrónica positiva (negativa) puede aumentar (disminuir) la extrañeza en una unidad $\Delta S = +1$ ($\Delta S = -1$) \cite{notas2020}.
 
-Además, $g_W$ es la constante de acoplo de la interacción débil y se relaciona con la constante de Fermi $G_F$ según \ref{eq:fermi_coupling}. Experimentalmente se ha comprobado que $G_F$ tiene un valor único para todos los procesos donde interviene la interacción débil, siendo este $G_{F}=1,166 \cdot 10^{-5}$ $GeV^{−2}$.
+Además, $g_W$ es la constante de acoplo de la interacción débil y se relaciona con la constante de Fermi $G_F$ según \ref{eq:fermi_coupling}. Experimentalmente se ha comprobado que $G_F$ tiene un valor único para todos los procesos donde interviene la interacción débil, siendo este $G_{F}= \SI{1,166e-5}{\per\GeV\squared}$.
 \begin{equation}
-\dfrac{G_{F}}{g_{w}}=\dfrac{\sqrt{2}}{8m_{W}}\label{eq:fermi_coupling}
+\dfrac{G_{F}}{{g_{w}}^2}=\dfrac{\sqrt{2}}{8{m_{W}}^2}\label{eq:fermi_coupling}
 \end{equation}
 
 Si se reescribe la corriente débil leptónica de la ecuación \ref{eq:electric_weak_current} en su forma expandida, pueden distinguirse dos términos:
@@ -100,27 +101,7 @@ Por lo tanto, el lagrangiano $\mathcal{L}$ de una interacción débil presentar 
 \end{equation}
 Los coeficientes $C_i$ son constantes de acoplamiento del proceso en cuestión y los $\psi_i$ son los bi-espinores resultantes de la ecuación de Dirac que describe cada fermión (quark o lepton) que participa en la interacción. Los $\widehat{\Gamma_{i}}$ son covariantes bilineales, los cuales proporcionan información sobre cómo se transforman las partículas que intervienen en el decaimiento (ver Apéndice \hyperref[cap:A]{A}).
 
-\subsubsection{Helicidad y Quiralidad}\label{sec:quirality}
-
-En las expresiones anteriores de la corriente débil leptónica aparece el operador $\gamma^5$, que indica la quiralidad de las partículas. A menudo, quiralidad y helicidad son conceptos confundidos. Por este motivo, es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada uno.
-
-La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco teórico de la TCC, la helicidad de la partícula se representa mediante el operador helicidad $\mathcal{H}$:
-\begin{equation}
-\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{s}}{p}
-\end{equation} 
-
-Para una partícula fermiónica (de espín $1/2$), los autovalores de $\mathcal{H}$ son $+1/2$, si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ en el caso contrario \cite{Bettini}. Así pues, los autoestados de helicidad se corresponden a espinores de dos componentes. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
-
-La quiralidad es una propiedad de los bi-espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo (R) y negativo (L), y sus proyectores son:
-\begin{align}
-\psi_L &= \dfrac{1-\gamma^5}{2}\psi & \psi_R &= \dfrac{1+\gamma^5}{2}\psi
-\end{align}
-
-El factor $\dfrac{1-\gamma^5}{2}$ es responsable de que sólo los leptones con quiralidad negativa reaccionen a la interacción débil y explica por qué, en esta interacción, pueden violarse P y CP, tal y como se detallará en el capítulo siguiente.
-
-A diferencia de la helicidad, la quiralidad es siempre un invariante de Lorentz. Sin embargo, cuando la partícula fermiónica carece de masa, helicidad y quiralidad coinciden.
-
-\subsection{Violación de Simetrías de Paridad y Carga}\label{sec:symmetry}
+\subsection{Violación de Simetrías de P y C}\label{sec:symmetry}
 Antes de comenzar con la descripción de la teoría débil en el Modelo de Quarks, resulta adecuado tratar el tema de las simetrías para entender en mayor detalle el decaimiento de los mesones $K$ y el posterior capítulo de la violación CP.
 
 Cuando ciertas propiedades de una partícula no cambian al someterla a un conjunto de transformaciones, se dice que esa partícula tiene una simetría. De acuerdo con el \textit{Teorema de Noether}, cada simetría se asocia a una magnitud física que se conserva, las cuales se describen mediante operadores hermíticos. Hay dos simetrías discretas importantes que conviene discutir en relación con los mesones $K$, ya que en la interacción fuerte y en la electromagnética se conservan, pero pueden violarse en la interacción débil. Estas dos simetrías son la inversión espacial P y la conjugación de carga C.
@@ -147,7 +128,7 @@ Estas dos simetrías parecían conservarse siempre en los procesos donde interve
 \subsubsection{Enigma $\tau$-$\theta$}
 Tras las primeras observaciones de los mesones $K$ en los años 50, había un par decaimientos de estas, por entonces llamadas, partículas $V$ que desconcertaba a los científicos de la época. Tanta era la confusión que incluso se llegó a pensar que había dos tipos de partículas $V$, a las que denominaron $\tau$ y $\theta$, como se mencionó en el capítulo anterior. 
 
-Por una parte, en la fotografía \ref{fig:nature1}, se observaba el decaimiento $\theta^{0} \rightarrow \pi^{+}\pi^{-}$ y años más tarde también se había constatado la existencia del proceso $\theta^{+} \rightarrow \pi^{+}\pi^{0}$. Por otro lado, la fotografía \ref{fig:powell} mostraba la desintegración de $\tau^+ \rightarrow \pi^{+}\pi^{+}\pi^{-}$.  El estudio de estos dos procesos concluía que las partículas tau y theta eran idénticas pues tenían las mismas masas, las mismas vidas medias, etc., pero dado que los decaimientos tenían distinta paridad, era \textit{imposible} que fueran las mismas partículas; no se concebía que la paridad fuera violada. Esto hecho fue conocido como el \textit{enigma $\tau$-$\theta$} \cite{Ferbel}.
+Por una parte, en la fotografía \ref{fig:nature1}, se observaba el decaimiento $\theta^{0} \rightarrow \pi^{+}\pi^{-}$ y años más tarde también se había constatado la existencia del proceso $\theta^{+} \rightarrow \pi^{+}\pi^{0}$. Por otro lado, la fotografía \ref{fig:powell} mostraba la desintegración de $\tau^+ \rightarrow \pi^{+}\pi^{+}\pi^{-}$.  El estudio de estos dos procesos concluía que las partículas $\tau$ y $\theta$ eran idénticas pues tenían las mismas masas, las mismas vidas medias, etc., pero dado que los decaimientos tenían distinta paridad, era \textit{imposible} que fueran las mismas partículas; no se concebía que la paridad fuera violada. Esto hecho fue conocido como el \textit{enigma $\tau$-$\theta$} \cite{Ferbel}.
 \begin{equation}
 \begin{gathered}
 \theta^{+} \rightarrow \pi^{+}\pi^{0} \Rightarrow \eta\left(\pi^{+}\right) \eta\left(\pi^{+}\right) = 1 \\ 
@@ -155,38 +136,93 @@ Por una parte, en la fotografía \ref{fig:nature1}, se observaba el decaimiento 
 \end{gathered}
 \end{equation}
 
-Tsung-Dao Lee y Chen-Ning Yang estudiaron a fondo el rompecabezas y concluyeron que no había ninguna evidencia para afirmar que la paridad se conservara en la interacción débil, por lo que las partículas $\tau$ y $\theta$ debían ser la misma y la violación de la paridad en esta interacción era una realidad más que plausible. 
+Lee y Yang estudiaron a fondo el rompecabezas, concluyendo que no había ninguna evidencia para afirmar que la paridad se conservara en la interacción débil, por lo que las partículas $\tau$ y $\theta$ debían ser la misma y la violación de la paridad en esta interacción era una realidad más que plausible. 
 
-El experimento clave que corroboró esta hipótesis,  realizado por Chien-Shiung Wu y Ernest Ambler, consistió en analizar la emisión $\beta$ del $\tensor*[^{60}]{\mathrm{Co}}{}$ polarizado,
+El experimento clave que corroboró esta hipótesis, realizado por Wu y Ambler, consistió en analizar la emisión $\beta$ del $\tensor*[^{60}]{\mathrm{Co}}{}$ polarizado,
 
+\subsubsection{Helicidad y Quiralidad}\label{sec:quirality}
+En las expresiones anteriores de la corriente débil leptónica aparece el operador $\gamma^5$, que indica la quiralidad de las partículas. A menudo, quiralidad y helicidad son conceptos confundidos. Por este motivo, es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada uno.
+
+La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco teórico de la TCC, la helicidad de la partícula se representa mediante el operador helicidad $\mathcal{H}$:
+\begin{equation}
+\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{s}}{p}
+\end{equation} 
+
+Para una partícula fermiónica (de espín $1/2$), los autovalores de $\mathcal{H}$ son $+1/2$, si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ en el caso contrario \cite{Bettini}. Así pues, los autoestados de helicidad se corresponden a espinores de dos componentes. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
+
+La quiralidad es una propiedad de los bi-espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo (R) y negativo (L), y sus proyectores son:
+\begin{align}
+\psi_L &= \dfrac{1-\gamma^5}{2}\psi & \psi_R &= \dfrac{1+\gamma^5}{2}\psi
+\end{align}
+
+A diferencia de la helicidad, la quiralidad es siempre un invariante de Lorentz. Sin embargo, cuando la partícula fermiónica carece de masa, helicidad y quiralidad coinciden.
+
+El factor $\dfrac{1-\gamma^5}{2}$ es responsable de que la interacción débil presente estructura V-A, provocando a su vez que se viole la conservación de P y C en esta interacción. Todo esto implica que sólo los leptones con quiralidad negativa pueden reaccionar a la fuerza débil.
 
 
 \subsection{Interacción débil en el Modelo de Quarks}\label{sec:weak_int_quarks}
-En el modelo de Quarks, la interacción débil se describe también mediante Diagramas de Feynmann pero esta vez se representa por medio de un cambio de sabor en los quarks, emitiendo a su vez bosones $W^{\pm}$. Según si un proceso de interacción débil, modifica o no su extrañeza, la expresión de corriente hadrónica puede variar:
+En el modelo de Quarks, la interacción débil se describe  mediante Diagramas de Feynmann, donde se produce un cambio de sabor en los quarks, emitiendo bosones $W^{\pm}$. Como consecuencia de la conservación del número leptónico en esta interacción, el acoplamiento de $W^{\pm}$ ocurre de manera estricta entre leptones de la misma generación \cite{Griffiths2008}: 
+\begin{align}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} \nu _{e} \\ e \end{pmatrix} \qquad
+\begin{pmatrix} \nu _{\mu } \\ \mu \end{pmatrix} \qquad
+\begin{pmatrix} \nu_{\tau} \\ \tau \end{pmatrix}
+\endgroup
+\end{align}
+No obstante, $W^{\pm}$ sí puede acoplarse a quarks de distintas generaciones:
+\begin{align}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} u \\ d \end{pmatrix} \qquad
+\begin{pmatrix} c \\ s \end{pmatrix} \qquad
+\begin{pmatrix} t \\ b \end{pmatrix}
+\endgroup
+\end{align}
+
+Cuando únicamente se habían descubierto los quarks ligeros, en torno a 1963, Cabbibo sugirió que este acoplamiento inter-generacional como explicación al fenómeno de violación de la extrañeza en la interacción débil. Así, en un Diagrama de Feynmann, la corriente hadrónica débil mantiene la estructura V-A, pero su expresión puede variar dependiendo de si se conserva o no la extrañeza en el vértice a estudio del proceso:
 \begin{itemize}
-\item Si no cambia la extrañeza: se aniquila un quark $d$ y se crea un quark $u$.
+\item Sin cambio de extrañeza, se aniquila un quark $d$ y se crea un quark $u$: $d \rightarrow u + W^{-}$
 \end{itemize}
 \begin{equation}
 j_{\mu}^{+had}(\Delta S= 0)=\cos \left( \theta _{c}\right) i\overline{\psi }_{u}\left( x\right) \dfrac{1-\gamma _{5}}{2}\gamma _{\mu }\psi _{d}
 \end{equation}
 \begin{itemize}
-\item Si se modifica la extrañeza: se aniquila un quark $s$ y se crea un quark $u$.
+\item Sin cambio de extrañeza, se aniquila un quark $s$ y se crea un quark $u$: $s \rightarrow u + W^{-}$
 \end{itemize}
 \begin{equation}
 j_{\mu}^{+had}(\Delta S= 0)=\sin \left( \theta _{c}\right) i\overline{\psi }_{u}\left( x\right) \dfrac{1-\gamma _{5}}{2}\gamma _{\mu }\psi _{s}
 \end{equation}
+donde $\theta _{c}$ hace referencia al ángulo de Cabbibo, cuyo valor experimental ha resultado ser $13,02\degree$.
 
-En la interacción débil, el sabor $u$, de carga $+2/3$, se conecta con los otros dos sabores ligeros mediante $d\cdot \cos \left( \theta _{c}\right) +s\cdot \sin \left( \theta _{c}\right)$, donde $\theta _{c}$ hace referencia al ángulo de Cabbibo, cuyo valor experimental ha resultado ser $13,02\degree$. Del mismo modo, Cabbibo planteó que debería haber otro quark con la misma carga que $u$ pero que se conectara con la combinación ortogonal $-d\cdot \sin \left( \theta _{c}\right) +s\cdot \cos \left( \theta c\right)$, prediciendo así la existencia del quark pesado $c$.
+La teoría de Cabbibo era bastante acertada al dar explicación a numerosos decaimientos de quarks. Sin embargo, esta teoría también permitía el decaimiento del mesón $K^0$ en $\mu^{+}\mu^{-}$, cuya amplitud de probabilidad (el lagrangiano $\mathcal{L}$) era proporcional a $\cos \left( \theta _{c}\right) \sin \left( \theta _{c}\right)$ y, por lo tanto, mucho mayor que la obtenida experimentalmente.  Para solucionar esta contradicción, en 1970, Glashow, Iliopoulos y Maiani (GIM), propusieron la existencia de un nuevo quark $c$ que debía acoplarse con $-d\cdot \sin \left( \theta _{c}\right) +s\cdot \cos \left( \theta c\right)$, la combinación ortogonal a la que se acoplaba el sabor $u$, $d\cdot \cos \left( \theta _{c}\right) +s\cdot \sin \left( \theta _{c}\right)$ \cite{Griffiths2008}.
 
-Posteriormente, se concluyó que, en la interacción débil, todos los sabores de quarks, pesados y ligeros, debían estar conectados mediante la \textit{matriz CKM} (Cabibbo-Kobayashi-Maskawa). La importancia de esta matriz recae en sus términos diagonales, conectando: $u\leftrightarrow d$, $c\leftrightarrow s$ y $t\leftrightarrow b$. Los términos no diagonales son los responsables de que los quarks pesados vayan decayendo progresivamente en los sabores ligeros $u$ y $d$, que son los constituyentes predominantes de la materia ordinaria. La expresión de la matriz CKM es:
+Nacía así, la teoría Cabbibo-GIM, la cual afirmaba que los estados de los quarks $d$ y $s$ debían describirse como:
+\begin{equation}
+\begin{gathered}
+d\cdot \cos \left( \theta _{c}\right) +s\cdot \sin \left( \theta _{c}\right) \\
+-d\cdot \sin \left( \theta _{c}\right) +s\cdot \cos \left( \theta c\right)
+\end{gathered}
+\end{equation}
+De manera que los $W^{\pm}$ se acoplaran a las familias de quarks como hacían los leptones, pero con la definición correcta de los estados de los quarks:
+\begin{align}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} u \\ d' \end{pmatrix} \qquad
+\begin{pmatrix} c \\ s' \end{pmatrix}
+\endgroup
+\end{align}
+
+En 1973, Kobayashi y Maskawa, en un intento de dar explicación a la violación CP, generalizaron el esquema de Cabbibo-GIM, para incluir una tercera generación de quarks, aún sin descubrir en aquel entonces, surgiendo así la \textit{matriz CKM} (Cabibbo-Kobayashi-Maskawa):
 \begin{align}
 d' &= V_{ud}\cdot d+V_{us}\cdot s + V_{ub}\cdot b \nonumber \\
 s' &= V_{cd}\cdot d+V_{cs}\cdot s + V_{cb}\cdot b \label{eq:CKM}\\
 b' &= V_{td}\cdot d+V_{ts}\cdot s + V_{tb}\cdot b \nonumber
 \end{align}
-
-Explicar de forma más ordenada
-
+Esta matriz permitía conectar todos los sabores de quarks entre sí, siendo los elementos de su diagonal los más importantes, al relacionar quarks de la misma familia: $u\leftrightarrow d$, $c\leftrightarrow s$ y $t\leftrightarrow b$. Los términos no diagonales son los responsables de que los quarks pesados vayan decayendo progresivamente en los sabores ligeros $u$ y $d$, que son los constituyentes predominantes de la materia ordinaria. 
 
 \section{Decaimiento de mesones $K$ cargados}
 \label{sec:charged_kaon_decay}
@@ -228,8 +264,38 @@ $\pi^{+}\pi^{+}\pi^{-}$ & $\pi^{+}\pi^{-}\pi^{-}$ \\
 \end{minipage}
 \end{table}
 
-Como puede observarse, los modos de decaimiento de $K^{-}$ son los mismos modos que los de $K^{+}$ pero con carga conjugada. Sin embargo, no todos estos procesos tienen la misma probabilidad de ocurrir. ¿A qué se debe esto y cuáles son los factores que determinan esta probabilidad?. Para responder a estas preguntas nos centramos en el estudio de los modos leptónicos del kaón positivo: $K^{+} \rightarrow e^{+}\nu_{e}$ y $K^{+} \rightarrow \mu^{+}\nu_{e}$.
+Como puede observarse, los modos de decaimiento de $K^{-}$ son los mismos modos que los de $K^{+}$ pero con carga conjugada. Sin embargo, no todos estos procesos tienen la misma probabilidad de ocurrir. ¿A qué se debe esto y cuáles son los factores que determinan esta probabilidad?. Para responder a estas preguntas nos centramos en el estudio de los modos leptónicos del kaón negativo: $K^{-} \rightarrow e^{-}\overline{\nu_{e}}$ y $K^{-} \rightarrow \mu^{-}\overline{\nu_{\mu}}$.
+
+Se tiene $K^{-} \rightarrow l^{-}\overline{\nu_{l}} \Rightarrow \overline{u}s \rightarrow l^{-}\overline{\nu_{l}}$
+
+(hacer dibujo diagrama Feynmann a nivel de quarks)
+
+(hacer dibujito con el blob del vértice hadrónico/de quarks $s+\overline{u} \rightarrow W^{-}$)
+
+De la eq 3.10 (INSERTAR LABEL EN LAS EQS ANTERIORES QUE NO TENGAN), la amplitud de probabilidad del decaimiento viene dado por:
+
+\begin{equation}
+\mathcal{M}=\dfrac{g_{w}^{2}}{8m_{W}}\left[ \overline{u}\left( 3\right) \gamma _{\mu }\left( 1-\gamma ^{5}\right) v \left( 2\right) \right] F^{\mu }
+\end{equation}
+
+$F^{\mu }$ es el factor de forma que describe el BLOB. $F^{\mu }=f_Kp^{\mu}$ con $p^{\mu}$ el cuadrivector momento y $f_K$ la constante de decaimiento del kaón, el cual lleva el factor $\sin \left(\theta_C \right)$ para que se produzca cambio de extrañeza.
+
+¿¿¿¿¿¿¿¿¿¿¿¿¿¿$\mathcal{L}$ describe la amplitud de decaimiento en el vértice y esta amplitud, es equivalente al elemento de matriz $\mathcal{M}$, que nos permitirá calcular la probabilidad de que ocurra dicho proceso de desintegración
 
 Para calcular la probabilidad de decaimiento de los mesones $K$ hacemos uso de la siguiente expresión:
+\begin{equation}
+W_{if}= \dfrac{2\pi }{\hbar }\left| \langle i\right| \widehat{H'}| f\rangle| ^{2}\rho \left( E\right) = \dfrac{2\pi }{\hbar } \mathcal{M} ^{2}\rho \left( E\right)
+\end{equation}
+?????????????
 
-VER GRIFFITHS, CAPITULO 10: WEAK INTERACTIONS - PION DECAY
+La anchura de desintegración o el decay rate es viene dado por a Ley de Oro de Fermi:
+\begin{equation}
+\Gamma =\dfrac{f_{k}^{2}}{\pi m_{k}^{2}}\left( \dfrac{g_w}{4M_W}\right) ^{4} m_l^{2}\left( m_{k}^{2}-ml^{2}\right) ^{2}
+\end{equation}
+
+decay rate y decay probability se relacionan así pero en el SN coinciden?
+\begin{equation}
+\Gamma = {\hbar}/{\tau} = \hbar W_{if}
+\end{equation}
+
+VER GRIFFITHS, CAPITULO 10: WEAK INTERACTIONS - PION DECAY y pag 326 for kaons
