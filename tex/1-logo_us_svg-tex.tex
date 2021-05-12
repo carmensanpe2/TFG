@@ -12,6 +12,13 @@
 \titlespacing *{\chapter }{0pt}{10pt}{15pt}
 \titlespacing *{\section }{0pt}{0pt}{0pt}
 \DeclareUnicodeCharacter {2212}{-}
+\usepackage {xpatch}
+\makeatletter
+\xpatchcmd \@HepConStyle
+{\edef \@upcode{\updefault }}
+{\ifdefined \shapedefault \edef \@upcode{\shapedefault }\else \edef \@upcode{\updefault }\fi }
+{}{}
+\makeatother
 
 \usepackage{svg-extract}
 \svgsetup{width=273.14923pt}

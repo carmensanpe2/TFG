@@ -1,10 +1,17 @@
 \documentclass[12pt,a4paper,twoside,titlepage]{report}
-\usepackage{mi_estilo}
-\usepackage{titlesec}
-\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter}{20pt}{\huge}
-\titlespacing*{\chapter}{0pt}{10pt}{15pt}
-\titlespacing*{\section}{0pt}{0pt}{0pt}
-\DeclareUnicodeCharacter{2212}{-}
+\usepackage{mi_estilo} % donde voy metiendo paquetes de estilo
+\usepackage{titlesec} % formatear titulos
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter}{20pt}{\huge} % para quitar lo de Chapter al inicio de cada capitulo
+\titlespacing*{\chapter}{0pt}{10pt}{15pt} % ajustar margenes titulos
+\titlespacing*{\section}{0pt}{0pt}{0pt} % ajustar margenes títulos
+\DeclareUnicodeCharacter{2212}{-} % resolver un error que me daba
+\usepackage{xpatch} % para que hepnames funcione en LaTeX v2020
+\makeatletter
+\xpatchcmd\@HepConStyle
+ {\edef\@upcode{\updefault}}
+ {\ifdefined\shapedefault\edef\@upcode{\shapedefault}\else\edef\@upcode{\updefault}\fi}
+ {}{}
+\makeatother
 
 \begin{document}
 	\renewcommand{\listtablename}{Índice de tablas}
@@ -14,12 +21,12 @@
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Índice de figuras y tablas}
 	\begingroup
-	\let\clearpage\relax
+	\let\clearpage\relax % para unir lof y lot en una página
 	\listoftables
 	\endgroup
 	\input{abstract}
 	\input{objetivos}
-	\clearpage
+	\clearpage % evitar error numeración romana en siguiente parte
 	\pagenumbering{arabic}
 	\input{c1_intro}
 	\input{c2_strangeness}
