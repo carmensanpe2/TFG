@@ -5,6 +5,7 @@
 \titlespacing*{\chapter}{0pt}{10pt}{15pt} % ajustar margenes titulos
 \titlespacing*{\section}{0pt}{0pt}{0pt} % ajustar margenes títulos
 \DeclareUnicodeCharacter{2212}{-} % resolver un error que me daba
+\DeclareMathOperator{\Tr}{Tr} % crear operador Traza
 \usepackage{xpatch} % para que hepnames funcione en LaTeX v2020
 \makeatletter
 \xpatchcmd\@HepConStyle
@@ -33,6 +34,7 @@
 	\input{c3_weak_int}
 	\input{c4_violationCP}
 	\input{c5_conclusions}
-	\input{apendice}
+	\input{apendiceA}
+	\input{apendiceB}
 	\input{bibliografia}
 \end{document}

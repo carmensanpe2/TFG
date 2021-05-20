@@ -105,9 +105,9 @@ Entonces la ecuación de Dirac, sabiendo que $\beta^2=\mathbb{1}$, se reformula 
 \begin{equation}
 i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0\label{eq:ecDirac_cov}
 \end{equation}
-Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynmann} \cite{MCR}, definimos el siguiente operador:
+Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynman} \cite{MCR}, definimos el siguiente operador:
 \begin{equation}
-\slashed{\partial}=\gamma ^{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla
+\slashed{\partial}=\gamma_{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla\label{eq:slashnot}
 \end{equation}
 Por lo que la ecuación de Dirac resulta:
 \begin{equation}
@@ -123,8 +123,8 @@ Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se represen
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
 \setlength\arraycolsep{10pt}
-\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} u_{1} \\ u_{2} \end{pmatrix} \qquad
-v(\boldsymbol{p},s)=\begin{pmatrix} v_{1} \\ v_{2}\label{eq:espinores} \end{pmatrix}
+\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} \psi_{1} \\ \psi_{2} \end{pmatrix} \qquad
+v(\boldsymbol{p},s)=\begin{pmatrix} \psi_{3} \\ \psi_{4}\label{eq:espinores} \end{pmatrix}
 \endgroup
 \end{align}
 El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
@@ -149,9 +149,9 @@ Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamm
 \begin{equation}
 \gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3\label{eq:gamma5}
 \end{equation}
-%\equiv \gamma_5
+y cumple que: $\gamma^5 \gamma^5 = 1$.
 
-\subsubsection{Covariantes bilineales}\label{sec:trazas}
+\subsubsection{Covariantes bilineales}\label{sec:bilinearcov}
 Los covariantes bilineales $\widehat{\Gamma}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
 
 \begin{table}[h]
@@ -174,5 +174,54 @@ $\widehat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
 con $\hat{\sigma}^{\mu\nu}= \dfrac{i}{2} \left(\gamma^{\mu}\gamma^{\nu} - \gamma^{\nu}\gamma^{\mu} \right)$.
 
 %\sum_s u(\boldsymbol{p},s)\overline{u}(\boldsymbol{p},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{p},s)\overline{v}(\boldsymbol{p},s) &= (\slashed{p}-m)
+\subsubsection{El truco de Casimir y los teoremas de las trazas}\label{sec:trazas}
+El truco de Casimir es útil a la hora de calcular la amplitud media $\left\langle|\mathcal{M}|^2\right\rangle$ de un proceso de decaimiento haciendo uso de las trazas de las matrices.
+\begin{equation}
+\sum _{spins}\left[ \overline{u}\left( a\right) \Gamma_{1}u\left( b\right) \right] \left[ \overline{u}\left( a\right) \Gamma _{2}u\left( b\right) \right] ^{\ast }= \Tr\left[ \Gamma _{1}\left( \slashed{p_{b}}+m_{b}c\right) \cdot \overline{\Gamma }_{2}\left( \slashed{p_{a}}+m_{c}c\right) \right]\label{eq:casimir_trick}
+\end{equation}
 
-AÑADIR TRAZAS DE LAS MATRICES DE DIRAC Y  CASIMIR'S TRICK
+Una demostración detallada de esta herramienta matemática puede encontrarse en la sección 7.7 de la referencia \cite{Griffiths2008}.
+
+Las principales identidades de las matrices y los teoremas de las trazas son los siguientes:
+
+\begin{enumerate}
+\setlength{\itemsep}{0.2\baselineskip}
+\item $\Tr \left(A+B\right)=\Tr\left( A\right)+\Tr\left( B\right)$
+\item $\Tr\left( \alpha A\right) =\alpha \Tr\left( A\right)$
+\item $\begin{aligned}[t]
+\Tr\left(AB\right) &= \Tr\left( BA\right) \longrightarrow & \Tr\left( ABC\right) &=\Tr\left( CAB\right) =\Tr\left( BCA\right)
+\end{aligned}$
+\item $g_{\mu\nu}g^{\mu\nu}=4$
+\item $\begin{aligned}[t]
+\gamma ^{\mu }\gamma ^{\nu }+\gamma ^{\nu }\gamma ^{\mu } &= 2g^{\mu \nu } \longrightarrow & \slashed{a}\slashed{b}+\slashed{b}\slashed{a}&=2a\cdot b
+\end{aligned}$
+\item $\gamma ^{\mu }\gamma ^{\nu }=4$
+\item $\begin{aligned}[t]
+\gamma _{\mu }\gamma ^{\nu }\gamma ^{\mu } &= -2\gamma ^{\nu } \longrightarrow & \gamma _{\mu }\slashed{a}\gamma^{\mu } &= -2\slashed{a}
+\end{aligned}$
+\item $\begin{aligned}[t] 
+\gamma _{\mu }\gamma ^{\nu }\gamma ^{\lambda }\gamma ^{\mu }&= 4g^{\nu\lambda } \longrightarrow & \gamma _{\mu }\slashed{a}\slashed{b}\gamma ^{\mu} &= 4a\cdot b \end{aligned}$
+\item $\begin{aligned}[t] 
+\gamma _{\mu }\gamma ^{\nu }\gamma ^{\lambda }\gamma ^{\sigma}\gamma ^{\mu }&=-2\gamma^{\sigma}\gamma ^{\lambda}\gamma ^{\nu} \longrightarrow & \gamma _{\mu }\slashed{a}\slashed{b}\slashed{c}\gamma ^{\mu} &= -2\slashed{c}\slashed{b}\slashed{a}\end{aligned}$
+\item Si se multiplica un número impar de matrices $\gamma^{\mu}$, la traza de la matriz resultante es siempre 0. $ \longrightarrow \Tr\left( \gamma ^{5}\gamma ^{\mu }\right) =\Tr\left( \gamma ^{5}\gamma ^{\mu }\gamma ^{\nu }\gamma ^{\lambda }\right) =0$
+\item $\Tr\left(\mathbb{1}\right)=4$
+\item $\begin{aligned}[t]
+\Tr\left( \gamma ^{\mu }\gamma ^{\nu }\right)&=4g^{\mu \nu }\rightarrow & Tr\left(\slashed{a}\slashed{b}\right) &=4a\cdot b
+\end{aligned}$
+\item $\begin{aligned}[t]
+\Tr\left( \gamma ^{\mu }\gamma ^{\nu }\gamma ^{\lambda }\gamma ^{\sigma }\right)&= 4\left( g^{\mu\nu}g^{\lambda \sigma} -g^{\mu \lambda }g^{\nu \sigma }+g^{\mu \sigma }g^{\nu \lambda }\right) \rightarrow \\ \Tr\left(\slashed{a}\slashed{b}\slashed{c}\slashed{d}\right) &=4\left( a\cdot bc\cdot d-a\cdot cb\cdot d+a\cdot db\cdot c\right)
+\end{aligned}$
+\item $\Tr\left( \gamma ^{5}\right)=0$
+\item $\begin{aligned}[t]
+\Tr\left( \gamma ^{5}\gamma ^{\mu }\gamma ^{\nu }\right)&=0 \rightarrow & \Tr\left(\gamma ^{5}\slashed{a}\slashed{b}\right) &=0 
+\end{aligned}$
+\item $\begin{aligned}[t]
+\Tr\left( \gamma ^{5}\gamma ^{\mu }\gamma ^{\nu }\gamma ^{\lambda }\gamma ^{\sigma }\right)&=4i\varepsilon ^{\mu \nu \lambda \sigma } \rightarrow & \Tr\left(\gamma ^{5}\slashed{a}\slashed{b}\slashed{c}\slashed{d}\right) &=4i\varepsilon ^{\mu \nu \lambda \sigma }a_{\mu }b_{\nu }c_{\lambda }d_{\sigma } 
+\end{aligned}$
+\end{enumerate}
+
+con $\varepsilon^{\mu\nu\lambda\sigma} = \left\{\begin{array}{lr}
+        -1, & \text{si $\mu\nu\lambda\sigma$ es una permutación par de 0123},\\
+        +1, & \text{si $\mu\nu\lambda\sigma$ es una permutación impar de 0123},\\
+        0, & \text{si hay dos índices iguales}.
+        \end{array}\right. $

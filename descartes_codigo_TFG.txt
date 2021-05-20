@@ -44,3 +44,31 @@ Aunque la Teoría de Fermi se queda obsoleta al trabajar con interacciones que s
 \begin{equation}
 W_{if}= \dfrac{2\pi }{\hbar }\left| \langle i\right| \widehat{H'}| f\rangle| ^{2}\rho \left( E\right)
 \end{equation}
+
+
+\usepackage[inline]{enumitem}   
+\makeatletter
+% This command ignores the optional argument for itemize and enumerate lists
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \quad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+$
+\dfrac{-ig_w}{2\sqrt{2}}F^{\mu}
+
+\dfrac{-i\left( g_{\mu \nu }-q_{\mu }q_{\nu }/M^{2}c^{2}\right) }{q^{2}-M^{2}c^{2}}
+
+q^{2}\ll \left( Mc\right) ^{2}
+
+\dfrac{ig_{\mu \nu }}{\left( Mc\right) ^{2}}
+
+\dfrac{-ig_w}{2\sqrt{2}}\gamma ^{\mu }\left( 1-\gamma ^{5}\right)
+
+\dfrac{1}{8}\left[ f_{K}\left( \dfrac{g_w}{M_W}\right) ^{2}\right] ^{2} \dfrac{{m_{\Pl}}^{2}}{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right) =
