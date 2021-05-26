@@ -78,7 +78,7 @@ dN &= -\Gamma Ndt & N(t) &= N(0)e^{-\Gamma t}
 \end{align}
 Además, esta magnitud $\Gamma$ está relacionada con la semivida de la partícula $\tau$:
 \begin{equation}
-\tau=\dfrac{1}{\Gamma}
+\tau=\dfrac{1}{\Gamma}\label{eq:meanlife}
 \end{equation}
 Como, en general, las partículas pueden decaer de distintas formas o modos:
 \begin{align}
@@ -282,39 +282,72 @@ p^{2}={p_{2}}^{2}+{p_3}^{2}+2\left( p_{2} \cdot p_{3}\right) \longrightarrow 2\l
 
 Sustituyendo en la ecuación \ref{eq:amplitudM}, se llega a:
 \begin{equation}
-\left\langle |\mathcal{M}|^{2}\right\rangle=\left( \dfrac{g_w}{4M_W}\right)^{4} {f_K}^2 {m_{\Pl}}^{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:amplitudmedia}
+\left\langle |\mathcal{M}|^{2}\right\rangle=\left( \dfrac{g_w}{2M_W}\right)^{4} {f_K}^2 {m_{\Pl}}^{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:amplitudmedia}
 \end{equation}
 
 Así, la expresión final para la probabilidad del decaimiento leptónico de $\PKm$ es:
 \begin{equation}
-\Gamma =\dfrac{{f_{K}}^{2}}{\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}{m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:decayrate}
+\Gamma =\dfrac{{f_{K}}^{2}}{\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}{m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)^{2}\label{eq:decayrate}
 \end{equation}
 
 Para ver un desarrollo detallado de cómo se obtienen las ecuaciones \ref{eq:Msimple}, \ref{eq:amplitudM}, \ref{eq:amplitudmedia} y \ref{eq:decayrate}, consultar el Apéndice \hyperref[cap:B]{B}.
 
 Comparando los dos modos de decaimiento posibles $\PKm \rightarrow \Pem \APnu_{e}$ y $\PKm \rightarrow \Pmuon \APnu_{\mu}$:
 \begin{equation}
-\dfrac{\Gamma \left( \PKm \rightarrow \Pem \APnu_{e}\right) }{\Gamma \left( \PKm \rightarrow \Pmuon \APnu_{\mu}\right) }=\dfrac{m_{e}^{2}\left( m_{K}^{2}-m_{e}^{2}\right) ^{2}}{m_{\mu }^{2}\left( m_{K}^{2}-m_{\mu }^{2}\right) ^{2}}=\dfrac{\left( 0,511\right) ^{2}\left( 493,677^{2}-0,511^{2}\right) ^{2}}{\left( 105,7\right) ^{2}\left( 493,677^{2}-105,7^{2}\right) ^{2}}=2,57\cdot 10^{-5}\label{eq:BRkaon}
+\dfrac{\Gamma \left( \PKm \rightarrow \Pem \APnu_{e}\right) }{\Gamma \left( \PKm \rightarrow \Pmuon \APnu_{\mu}\right) }=\dfrac{m_{e}^{2}\left( m_{K}^{2}-m_{e}^{2}\right) ^{2}}{m_{\mu }^{2}\left( m_{K}^{2}-m_{\mu }^{2}\right) ^{2}}=\dfrac{\left( 0,511\right) ^{2}\left( 493,677^{2}-0,511^{2}\right) ^{2}}{\left( 105,7\right) ^{2}\left( 493,677^{2}-105,7^{2}\right) ^{2}}=\num{2,57e-5}\label{eq:BRkaon}
 \end{equation}
 
 Las masas anteriores tienen unidades de MeV. Si procedemos de forma análoga para el pión $\Pgp$, se tiene que:
 \begin{equation}
-\dfrac{\Gamma \left( \Pgpm \rightarrow \Pem \APnu_{e}\right) }{\Gamma \left( \Pgpm \rightarrow \Pmuon \APnu_{\mu}\right) }=\dfrac{m_{e}^{2}\left( m_{\pi}^{2}-m_{e}^{2}\right) ^{2}}{m_{\mu }^{2}\left( m_{\pi}^{2}-m_{\mu }^{2}\right) ^{2}}=\dfrac{\left( 0,511\right) ^{2}\left(139,57^{2}-0,511^{2}\right) ^{2}}{\left( 105,7\right) ^{2}\left( 139,57^{2}-105,7^{2}\right) ^{2}}=1,28\cdot 10^{-4}\label{eq:BRpion}
+\dfrac{\Gamma \left( \Pgpm \rightarrow \Pem \APnu_{e}\right) }{\Gamma \left( \Pgpm \rightarrow \Pmuon \APnu_{\mu}\right) }=\dfrac{m_{e}^{2}\left( m_{\pi}^{2}-m_{e}^{2}\right) ^{2}}{m_{\mu }^{2}\left( m_{\pi}^{2}-m_{\mu }^{2}\right) ^{2}}=\dfrac{\left( 0,511\right) ^{2}\left(139,57^{2}-0,511^{2}\right) ^{2}}{\left( 105,7\right) ^{2}\left( 139,57^{2}-105,7^{2}\right) ^{2}}=\num{1,28e-4}\label{eq:BRpion}
 \end{equation}
+
+Estos valores de los ratios son muy parecidos a los datos experimentales \cite{tanabashi} \cite{olive}:
+\begin{align}
+\dfrac{\Gamma \left( \PKm \rightarrow \Pem \APnu_{e}\right)}{\Gamma \left( \PKm \rightarrow \Pmuon \APnu_{\mu}\right)} &= \num{2,488(09)e-5} & \dfrac{\Gamma \left( \Pgpm \rightarrow \Pem \APnu_{e}\right)}{\Gamma \left( \Pgpm \rightarrow \Pmuon \APnu_{\mu}\right)} &= \num{1,230(04)e-4}\label{eq:BRexp}
+\end{align}
 
 El resultado de los dos ratios indica que, tanto el pión como el mesón $\PK$, prefieren el modo leptónico del $\Pmuon$ sobre el $\Pem$. En un principio, este hecho puede parecer sorprendente puesto que la masa del muón es mucho mayor que la del electrón y, de acuerdo con las consideraciones de la densidad de estados finales, se favorecen los decaimientos con la disminución de masa más grande. Esto quiere decir que, excluyendo aquellos casos donde intervenga alguna ley de conservación, el estado final de las desintegraciones suele ser el más ligero. 
 
-Los modos leptónicos de $\PK$ y $\Pgp$ suponen una excepción a esta norma. Este hecho puede entenderse teniendo en cuenta que, tanto el pión como el kaón, tienen espín 0, por lo que, para conservar el espín neto nulo y el momento lineal, leptón $\Pl$ y antineutrino $\APnulepton$ deben emitirse con espines opuestos y helicidades iguales. Pero, la interacción débil sólo es sensible a la componente izquierda de la quiralidad, luego el $\APnulepton$ siempre tiene quiralidad izquierda y helicidad positiva ya que, para las antipartículas sin masa, la helicidad es opuesta a la quiralidad. Esto significa que $\Pl$ debe emitirse también con helicidad positiva y qiralidad derecha.
+Los modos leptónicos de $\PK$ y $\Pgp$ suponen una excepción a esta norma. Este hecho puede entenderse teniendo en cuenta que, tanto el pión como el kaón, tienen espín 0, por lo que, para conservar el espín neto nulo y el momento lineal, leptón $\Pl$ y antineutrino $\APnulepton$ deben emitirse con espines opuestos y helicidades iguales. Pero, la interacción débil sólo es sensible a la componente izquierda de la quiralidad, luego el $\APnulepton$ siempre tiene quiralidad izquierda y helicidad positiva ya que, para las antipartículas sin masa, la helicidad es opuesta a la quiralidad. Esto significa que $\Pl$ debe emitirse también con helicidad positiva.
 
-Sin embargo, si $\Pl$ no tuviera masa, únicamente existiría como una partícula con quiralidad izquierda. Más concretamente, el $\left( 1-\gamma^{5} \right)$ en el factor del vértice débil se acoplaría sólo a los electrones con quiralidad izquierda, del mismo modo que se acoplaría sólo a los neutrinos izquierdos. Esto es debido a que en el límite relativista, para las partículas sin masa, quiralidad y helicidad coinciden. De esta forma, el modo $\Pem \APnu_{e}$ nunca podría ocurrir. Puesto que este no es el caso y $\Pl$ tiene masa (aunque muchos más pequeña que la del $\Pmuon$), el modo $\Pem \APnu_{e}$ sí ocurre aunque de forma mucho menos numerosa que el modo $\Pmuon \APnu_{\mu}$.
+Sin embargo, la helicidad ``correcta'' de los leptones no es la positiva: Si $\Pl$ no tuviera masa, únicamente existiría como una partícula con quiralidad izquierda y helicidad negativa. Más concretamente, si se diera este caso, el $\left( 1-\gamma^{5} \right)$ en el factor del vértice débil se acoplaría sólo a los electrones con quiralidad izquierda, del mismo modo que se acoplaría sólo a los neutrinos izquierdos. Esto es debido a que en el límite relativista, para las partículas sin masa, quiralidad y helicidad coinciden. De esta forma, el modo $\Pem \APnu_{e}$ nunca podría ocurrir. Puesto que este no es el caso y $\Pem$ tiene masa (aunque muchos más pequeña que la del $\Pmuon$), emerge con helicidad positiva para preservar el momento angular. Luego, el modo $\Pem \APnu_{e}$ sí ocurre aunque de forma mucho menos numerosa que el modo $\Pmuon \APnu_{\mu}$ \cite{Griffiths2008} \cite{Halzen}.
 
-Aunque esta explicación parece sugerir que la violación de la paridad en la interacción débil causa esta supresión del modo electrónico frente al muónico, la razón fundamental radica en la naturaleza vectorial de la interacción débil. Por lo que, incluso una interacción que conserve la paridad produciría la misma supresión siempre que pueda escribirse en términos de una corriente vector. 
+Aunque esta justificación parece sugerir que la violación de la paridad en la interacción débil causa esta supresión del modo electrónico frente al muónico, la razón fundamental radica en la conservación del momento angular y en la estructura vectorial de la interacción débil. Por lo que, incluso una interacción que conserve la paridad produciría la misma supresión siempre que pueda escribirse en términos de una corriente vector. 
 
-Por ejemplo, si se utiliza el formalismo de la teoría electrodébil, el vértice leptónico se describe entonces mediante un factor $\left( C_{V}-C_{A}\gamma^{5} \right)$, donde $C_{V}$ y $C_{A}$ son constantes reales. Siguiendo el mismo procedimiento, resultaría la misma expresión para la probabilidad de decaimiento salvo un factor  $\left( {C_{V}}^2+{C_{A}}^2\right)$:
+Por ejemplo, si se utiliza el formalismo de la teoría electrodébil, el vértice leptónico se describe entonces mediante un factor $\left( C_{V}-C_{A}\gamma^{5} \right)$, donde $C_{V}$ y $C_{A}$ son constantes reales. Siguiendo el mismo procedimiento, resultaría la misma expresión para la probabilidad de decaimiento salvo un término $\left( {C_{V}}^2+{C_{A}}^2\right)$:
 \begin{equation}
 \Gamma =\dfrac{{f_{K}}^{2}}{2\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}\left( {C_{V}}^2+{C_{A}}^2\right){m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:decayrateEWt}
 \end{equation}
 
-El caso original se obtendría haciendo $C_{V}=1$ y $C_{A}=-1$. Sin embargo, si hacemos $C_{A}=0$, se mantiene una expresión para $\Gamma$ similar, y por tanto la misma supresión del modo electrónico. Del mismo modo, si se tiene $C_{V}=0$, también se produce esta supresión. Así, se confirma que la causa responsable de que se prefiera el decaimiento muónico frente al electrónico es la estructura vector de la corriente débil. Cualquier interacción que presente una estructura de vector, ya sea vector polar, vector axial o una combinación de ambas, produciría la misma preferencia por el modo muónico que tienen $\PK$ y $\Pgp$.
+El caso original se obtendría haciendo $C_{V}=1$ y $C_{A}=-1$. Sin embargo, si hacemos $C_{A}=0$, se mantiene una expresión para $\Gamma$ similar a \ref{eq:decayrate}, y por tanto la misma supresión del modo electrónico. Del mismo modo, si se tiene $C_{V}=0$, también se produce esta supresión. Así, se confirma que la causa responsable de que se prefiera el decaimiento muónico frente al electrónico es la naturaleza vectorial de la corriente débil. Cualquier interacción que presente una estructura de vector, ya sea vector polar, vector axial o una combinación de ambas, produciría la misma preferencia por el modo muónico que tienen $\PK$ y $\Pgp$. Además, que el ratio del mesón $\PK$ \ref{eq:BRkaon} sea un orden de magnitud menor que el del mesón $\Pgp$ \ref{eq:BRpion} se debe a que la masa del kaón $m_{K}$ es bastante mayor que la del pión $m_{\pi}$, suprimiendo aún más el modo leptónico del electrón \cite{Renton}.
 
-Por otra parte, la diferencia fundamental entre los ratios \ref{eq:BRkaon} y \ref{eq:BRpion} es que ambos difieren en un orden de magnitud. Esta diferencia se debe, principalmente, a que durante el decaimiento del pión $\Pgp$ no hay cambio de extrañeza $S$ mientras que en para el mesón $\PK$ sí lo hay.
+Por otra parte, atendiendo al formalismo de la interacción débil en el Modelo de Quarks, se tiene que ahora las constantes de decaimiento $f_{\Pgp}$ y $f_{\PK}$ son prácticamente análogas salvo un factor $\cos \left( \theta _{C}\right)$ y $\sin \left( \theta _{C}\right)$, respectivamente, puesto que el modo leptónico del kaón conlleva un cambio de extrañeza $S$ pero el del pión no. Estudiando el $BR$ del modo leptónico de ambos mesones, se tiene entonces que:
+\begin{equation}
+BR\left(\PKm / \Pgpm\right)_{\Pl}=\dfrac{\Gamma \left( \PKm \rightarrow \Pl \APnulepton\right) }{\Gamma \left( \Pgpm \rightarrow \Pl \APnulepton\right)}=\tan ^{2}\left( \theta _{C}\right) \left( \dfrac{m_{\pi}}{m_{K}}\right) ^{3}\left( \dfrac{{m_{K}}^{2}-{m_{\Pl}}^{2}}{{m_{\pi}}^{2}-{m_{\Pl}}^{2}}\right) ^{2}
+\end{equation}
+
+Sustituyendo el valor de $13,02\degree$ para el ángulo de Cabibbo y las masas correspondientes para el modo electrónico y el muónico, se obtiene $BR\left(\PKm / \Pgpm\right)_{e}=0,19$ y $BR\left(\PKm / \Pgpm\right)_{\mu}=0,96$. Experimentalmente, se ha obtenido que los ratios tienen los valores $BR\left(\PKm / \Pgpm\right)_{e}=0,26$ y $BR\left(\PKm / \Pgpm\right)_{\mu}=1,34$, produciendo en un valor de  $15,4\degree$ para el ángulo de Cabibbo \cite{Griffiths2008}. De los resultados anteriores de los $BR$ se aprecia como $f_{\PK} \simeq \dfrac{1}{4} f_{\Pgp}$. 
+
+Nuevamente, de los ha
+
+
+%Asimismmo, si tenemos en cuenta las expresiones \ref{eq:meanlife} y \ref{eq:decayrate} junto con los datos experimentales extraídos de \cite{Zyla} para el promedio de semivida: $\tau \left(\Pgp\right)=\SI{2,6033(05)e-8}{\second}$ y $\tau \left(\PKm\right)=\SI{1,2380(20)e-8}{\second}$, respectivamente
+
+\subsubsection{Helicidad y Quiralidad}\label{sec:quirality}
+En las expresiones anteriores de la corriente débil leptónica aparece el operador $\gamma^5$, que indica la quiralidad de las partículas. A menudo, quiralidad y helicidad son conceptos confundidos. Por este motivo, es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada uno.
+
+La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco teórico de la TCC, la helicidad de la partícula se representa mediante el operador helicidad $\mathcal{H}$:
+\begin{equation}
+\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{\sigma}}{p}
+\end{equation} 
+
+Para una partícula fermiónica (de espín $1/2$), los autovalores de $\mathcal{H}$ son $+1/2$ (helicidad positiva), si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ (helicidad negativa) en el caso contrario \cite{Bettini}. Así pues, los autoestados de helicidad se corresponden a espinores de dos componentes. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
+
+La quiralidad es una propiedad de los bi-espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo o derecha (R) y negativo o izquierda (L), y sus proyectores son:
+\begin{align}
+\psi_L &= \dfrac{1-\gamma^5}{2}\psi & \psi_R &= \dfrac{1+\gamma^5}{2}\psi
+\end{align}
+
+A diferencia de la helicidad, la quiralidad es siempre un invariante de Lorentz. Sin embargo, cuando la partícula fermiónica carece de masa, helicidad y quiralidad coinciden.
+El factor $\dfrac{1-\gamma^5}{2}$ es responsable de que la interacción débil presente estructura V-A, provocando a su vez que se viole la conservación de P y C en esta interacción. Todo esto implica que sólo los leptones con quiralidad negativa (izquierda) pueden reaccionar a la fuerza débil.
