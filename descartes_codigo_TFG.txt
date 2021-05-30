@@ -55,3 +55,8 @@ Aunque la Teoría de Fermi se queda obsoleta al trabajar con interacciones que s
     \quad\@itemlabel\hspace{\labelsep}%
 \fi}
 \makeatother
+
+
+% Además, se cumple que $[\hat{P}, \widehat{H}]=0$
+% $[\hat{C} , \widehat{H}]=0$
+%Es más, al actuar la interacción débil dos veces (una para que $\PKz$ decaiga en $\Pgpp\Pgpm$ y la otra al aplicar la operación C de conjugación de carga)

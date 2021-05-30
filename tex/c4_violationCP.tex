@@ -4,9 +4,9 @@ Los conceptos de paridad y violación de paridad han sido utilizados varias vece
 Cuando ciertas propiedades de una partícula no cambian al someterla a un conjunto de transformaciones, se dice que esa partícula tiene una simetría. De acuerdo con el Teorema de Noether, cada simetría se asocia a una magnitud física que se conserva, las cuales se describen mediante operadores hermíticos. Hay dos simetrías discretas importantes que conviene discutir en relación con los mesones $\PK$, ya que en la interacción fuerte y en la
 electromagnética se conservan, pero pueden violarse en la interacción débil. Estas dos simetrías son la inversión espacial P y la conjugación de carga C.
 
-En la invariancia frente a la inversión espacial o simetría P (a veces, paridad) se invierte el signo de las coordenadas de las partículas. En consecuencia, los vectores polares, como la posición $\vec{r}$ y el momento lineal $\vec{p}$, cambian su signo, mientras que los vectores axiales, como el momento angular orbital $\vec{l}$, lo conservan. Esta simetría se describe mediante el operador paridad $\hat{P}$. La paridad intrínseca o paridad-P $\eta _{P}\left(A \right)$ se determina empíricamente y se asocia con la estructura interna de la partícula A, pudiendo ser su valores $\pm 1$. Para fermiones y bosones se tiene $\eta _{P}\left(f \right)= -\eta_{P} \left(\overline{f} \right)$ y $\eta_{P}\left(b \right)=\eta_{P}\left(\overline{b}\right)$, respectivamente. Además, se cumple que $[\hat{P}, \widehat{H}]=0$ \cite{notas2020}. 
+En la invariancia frente a la inversión espacial o simetría P (a veces, paridad) se invierte el signo de las coordenadas de las partículas. En consecuencia, los pseudoescalares y los vectores polares cambian su signo (ejemplos de vectores polares son la posición $\vec{r}$ y el momento lineal $\vec{p}$), mientras que los escalares y los vectores axiales o pseudovectores lo conservan (ejemplos de vectores axiales son el momento angular orbital $\vec{l}$ o el espín $\vec{s}$). Esta simetría se describe mediante el operador paridad $\hat{P}$. La paridad intrínseca o paridad-P $\eta _{P}\left(A \right)$ se determina empíricamente y se asocia con la estructura interna de la partícula A, pudiendo ser su valores $\pm 1$. Para fermiones y bosones se tiene $\eta _{P}\left(f \right)= -\eta_{P} \left(\overline{f} \right)$ y $\eta_{P}\left(b \right)=\eta_{P}\left(\overline{b}\right)$, respectivamente \cite{notas2020}. 
 
-De forma similar, la invariancia frente a la conjugación de carga o simetría C, transforma partículas A en antipartículas $\overline{A}$ y viceversa, de modo que cambia el signo de la carga y del resto de números cuánticos aditivos (bariónico $B$, leptónico $L$, etc.) El operador asociado es $\hat{C}$. Nuevamente, $\eta _{C}\left(A\right)= \pm 1$ y $[\hat{C} , \widehat{H}]=0$. En este caso, sólo las partículas neutras tienen la paridad-C  $\eta _{C}\left(A \right)$ bien definida \cite{notas2020}. 
+De forma similar, la invariancia frente a la conjugación de carga o simetría C, transforma partículas A en antipartículas $\overline{A}$ y viceversa, de modo que cambia el signo de la carga y del resto de números cuánticos internos (número bariónico $B$, número leptónico $L$, extrañeza $S$, etc.), dejando intactos la masa, la energía, el momento y el espín.  El operador asociado es $\hat{C}$. Nuevamente, $\eta _{C}\left(A\right)= \pm 1$. En este caso, sólo las partículas neutras tienen la paridad-C  $\eta _{C}\left(A \right)$ bien definida \cite{notas2020}. 
 
 Estas dos simetrías parecen conservarse siempre en los procesos donde intervenían interacciones fundamentales. Sin embargo, el hallazgo de los mesones $\PK$ trajo consigo las primeras evidencias de que la interacción débil podía violar las simetrías P y C.
 
@@ -17,22 +17,92 @@ Tras las primeras observaciones de los mesones $\PK$ en los años 50, había un 
 Recordemos que, por una parte, en la fotografía \ref{fig:nature1}, se observaba el decaimiento $\theta^{0} \rightarrow \Ppiplus\Ppiminus$ y años más tarde también se había constatado la existencia del proceso $\theta^{+} \rightarrow \Ppiplus\Pgpz$. Por otro lado, la fotografía \ref{fig:powell} mostraba la desintegración de $\APtauon \rightarrow \Pgpp\Pgpp\Pgpm$.  El estudio de estos dos procesos concluía que las partículas $\Ptau$ y $\theta$ eran idénticas pues tenían las mismas masas, las mismas vidas medias, etc., pero dado que los decaimientos tenían distinta paridad, era \textit{imposible} que fueran las mismas partículas; no se concebía que la paridad fuera violada. Esto hecho fue conocido como el \textit{enigma $\Ptau$-$\theta$} \cite{Ferbel}.
 \begin{equation}
 \begin{gathered}
-\theta^{+} \rightarrow \pi^{+}\pi^{0} \Rightarrow \eta\left(\pi^{+}\right) \eta\left(\pi^{+}\right) = 1 \\ 
-\tau^{+} \rightarrow \pi^{+}\pi^{+}\pi^{-} \Rightarrow \eta\left(\pi^{+}\right) \eta\left(\pi^{+}\right) \eta\left(\pi^{-}\right) = -1
+\theta^{+} \rightarrow \pi^{+}\pi^{0} \Rightarrow \eta_{P}\left(\pi^{+}\right) \eta_{P}\left(\pi^{+}\right) = 1 \\ 
+\tau^{+} \rightarrow \pi^{+}\pi^{+}\pi^{-} \Rightarrow \eta_{P}\left(\pi^{+}\right) \eta_{P}\left(\pi^{+}\right) \eta_{P}\left(\pi^{-}\right) = -1
 \end{gathered}
 \end{equation}
-Lee y Yang estudiaron a fondo el rompecabezas, concluyendo que no había ninguna evidencia para afirmar que la paridad se conservara en la interacción débil, por lo que las partículas $\tau$ y $\theta$ debían ser la misma y la violación de la paridad en esta interacción era una realidad más que plausible. 
-El experimento clave que corroboró esta hipótesis, realizado por Wu y Ambler, consistió en analizar la emisión $\beta$ del $\tensor*[^{60}]{\mathrm{Co}}{}$ polarizado.
+En 1956, Lee y Yang estudiaron a fondo el rompecabezas, concluyendo que no había ninguna evidencia para afirmar que la paridad se conservara en la interacción débil, por lo que las partículas $\tau$ y $\theta$ debían ser la misma y la violación de la paridad en esta interacción era una realidad más que plausible. 
+
+El experimento clave que corroboró esta hipótesis, realizado por Wu y Ambler, consistió en analizar la emisión $\beta$ del $\tensor*[^{60}]{\mathrm{Co}}{}$ polarizado (por ser semejante a la del neutrón): 
+\begin{equation}
+\tensor*[^{60}]{\mathrm{Co}}{} \longrightarrow \tensor*[^{60}]{\mathrm{Ni}}{} + \Pem + \APnu_{e}
+\end{equation}
+utilizando un campo magnético externo, se polarizan los espines de un cristal de cobalto radioactivo previamente enfriado a $\SI{0,01}{\kelvin}$, minimizando así su despolarización por agitación térmica. Cuando el núcleo de cobalto decae, se miden las direcciones de los electrones emitidos. Wu y Ambler notaron que, preferentemente, los $\Pem$ se emitían en una dirección paralela al campo y, por lo tanto, igual a la dirección de espín del núcleo padre. Esto es, si el campo apuntaba al norte, los $\Pem$ se emitían por el norte. Para que la paridad se conserve, si se repite el mismo experimento alineando el espín nuclear nuevamente, pero ahora en dirección sur, los $\Pem$ deberían salir por el sur esta vez. No obstante, se observó que este no era el caso y los electrones seguían mostrando preferencia por emitirse en dirección norte, constatado así la violación de simetría P en la interacción débil \cite{Ferbel} \cite{Griffiths2008}. 
+
+\begin{figure}[!ht]
+\begin{subfigure}[t]{.5\textwidth}
+  \centering
+\includegraphics[width=0.4\linewidth]{{C:/Users/Carmen/Desktop/Universidad/TFG/Borradores/img/cobalto1.PNG}}
+\caption{$\Pem$ emitido en la dirección del campo.}
+  \label{fig:cobalto1}
+\end{subfigure}%
+\begin{subfigure}[t]{.5\textwidth}
+  \centering
+  \includegraphics[width=0.45\linewidth]{{C:/Users/Carmen/Desktop/Universidad/TFG/Borradores/img/cobalto2.PNG}}
+  \caption{$\Pem$ emitido dirección opuesta al campo.}
+  \label{fig:cobalto2}
+\end{subfigure}
+\caption[Experimento de Wu y Ambler]{Evidencia de la violación P en el experimento de Wu.  \cite{Griffiths2008}}
+\label{fig:cobalto}
+\end{figure}
 
 
-\section{Teoría Electrodébil}\label{sec:electroweak}
-Describir unificación de la interacción débil y la electromagnética
-e introducir formalismo $Z^0$
-\section{Decaimiento de mesones $K$ neutros}
+Hasta mediados de los 50, los científicos asumían que la mitad de los neutrinos tendrían helicidad positiva y la otra mitad helicidad negativa. La implicación verdaderamente importante que tuvo descubrir la violación P en la fuerza débil fue que sólo existían neutrinos con helicidad negativa y antineutrinos con helicidad positiva. 
+
+Siguiendo la misma línea de razonamiento, si aplicásemos la conjugación de carga a un neutrino (que tiene helicidad negativa), nos daría un antineutrino. Pero como la paridad-C no cambia el espín, el $\APnu$ resultante mantendría la helicidad negativa del $\Pnu$ original. Y ya hemos confirmado mediante el experimento de Wu que esto no es posible, pues sólo existen antineutrinos con helicidad positiva. Por ende, la interacción débil también presenta violación de simetría C.
+
+Entonces, tras descubrir que la fuerza débil no respetaba las simetrías P y C e intentando unificar las propiedades de las fuerzas fundamentales, se formuló que la combinación de ambas simetrías o simetría CP era lo que realmente debía conservarse.
+
+No obstante, en 1964, el estudio de los decaimientos de mesones $\PKz$ evidenció la violación CP en la interacción débil. La siguiente sección presenta una descripción detallada del decaimiento de los mesones $\PKz$, la violación CP y sus implicaciones.
+
+\section{Decaimiento de mesones $\PK$ neutros}
 \label{sec:neutral_kaon_decay}
 
-Explicar K-long y K-short, por qué se introducieron y principales decays
+Volvamos a la época entre 1954 y 1955, relatada en el capítulo \ref{cap:strangeness}. El concepto de extrañeza acababa de surgir y la propuesta de Nishijima se basaba en clasificar los mesones $\PK$ en dobletes de carga, uno para las partículas $\PKp$ y $\PKz$ asignándoles un valor de extrañeza $S=1$, y otro para las correspondientes antipartículas $\PKm$ y $\PaKz$, con $S=-1$.
+
+La teoría parecía clara pero, en el laboratorio, ¿cómo es posible distinguir $\PKz(S=1)$ de $\PaKz(S=-1)$? Esta pregunta, planteada por Fermi, obtuvo su respuesta al formularse un nuevo concepto: los \textit{estados mixtos} (o \textit{mezcla}) de las partículas. Para entender esta nueva hipótesis sobre ``mezcla de partículas'', utilizamos el mismo ejemplo que expone Pais en su libro \cite{Pais}:
+
+Si al decaimiento $\PKz \left(\Pqd\Paqs\right) \rightarrow \Pgpp + \Pgpm$, con amplitud A, le aplicamos una conjugación de carga C, el decaimiento resultante es $\PaKz \left(\Pqs\Paqd\right) \rightarrow \Pgpp + \Pgpm$, también de amplitud A. Se observa que el estado final es el mismo para ambos procesos, pero el inicial no, al tener diferente extrañeza. Esto es debido a que la extrañeza no tiene por qué conservarse en la fuerza débil. Entonces, se tiene que $\PKz$ y $\PaKz$ se mezclan como $\PKz \leftrightarrows \Pgpp + \Pgpm \leftrightarrows \PaKz$.
+
+Cabe destacar que todo este desarrollo fue concebido casi una década anterior al descubrimiento de la violación P y C en la interacción débil, por lo que haciendo uso de las operaciones P, C y CP, se obtienen las combinaciones\protect\footnotemark de estados siguientes:
+\begin{align}
+\PK_{1} &= \dfrac{\PKz + \PaKz}{\sqrt{2}} & \PK_{2} &= \dfrac{\PKz - \PaKz}{\sqrt{2}}\label{eq:k1k2def}
+\end{align}
+ya que los estados de los kaones son pseudoescalares y se cumple que \cite{Griffiths2008}
+\begin{align}
+P|\PKz\rangle &= -|\PKz\rangle & P|\PaKz\rangle &= -|\PaKz\rangle\\
+C|\PKz\rangle &= |\PaKz\rangle & C|\PaKz\rangle &= |\PKz\rangle\\
+CP|\PKz\rangle &= -|\PaKz\rangle & CP|\PaKz\rangle &= -|\PKz\rangle
+\end{align}
+
+\footnotetext{Las partículas que decaen por interacción débil son autoestados de CP, por eso se pueden definir estas combinaciones. Los estados $|\PKz\rangle$ y $|\PaKz\rangle$ no son autoestados de CP pero $|\PK_{1}\rangle$ y $|\PK_{2}\rangle$, sí \cite{Perkins}.}
+
+Esto implicaba que, \textit{asumiendo} que la paridad conjunta CP se conserve en la interacción débil, $\PK_{1}$ sólo puede decaer en estados pares, es decir con CP=+1 mientras que $\PK_{2}$ sólo decae a estados impares con CP=-1, por lo que $\PK_{1}$  puede decaer a $\Pgpp \Pgpm$ en (con amplitud $A/ \sqrt{2}$) pero $\PK_{2}$ no (amplitud nula). En consecuencia, $\PK_{1}$ y $\PK_{2}$ tienen vidas medias diferentes $\tau_{1}$ y $\tau_{2}$, respectivamente \cite{Pais} \cite{Perkins}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{C:/Users/Carmen/Desktop/Universidad/TFG/Borradores/img/mixing.png}
+	\caption[Diagrama de Feynmann de la mezcla de mesones $\PK$ neutros]
+	{Diagrama de Feynman de la mezcla de mesones $\PK$ neutros. \cite{Helsinki}}
+	\label{fig:kaonmix}
+\end{figure}
+
+Dado que, típicamente, la designación de partícula se asigna a aquella con una semivida definida, es más correcto expresar la mezcla de estados como:
+\begin{align}
+\PKz &= \dfrac{\PK_{1} + \PK_{2}}{\sqrt{2}} & \PaKz &= \dfrac{\PK_{1} - \PK_{2}}{\sqrt{2}}\label{eq:k1k2defbuena}
+\end{align}
+
+Generalmente, los mesones $\PK$ neutros decaen en dos o en tres piones. Al comienzo de este capítulo, comentábamos en el enigma $\Ptau$-$\theta$ que el modo $2\Pgp$ tiene P=+1 y CP=+1 mientras que el de $3\Pgp$ tiene P=-1 y CP=-1 (ambos procesos tienen C=+1). Luego, se concluyó que $\PK_{1}$ decae siempre en $2\Pgp$ mientras $\PK_{2}$ lo hace en $3\Pgp$, asumiendo la invariancia CP. Ahora, dado que la desintegración en $2\Pgp$ es mucho más rápida porque libera más energía que el modo $3\Pgp$, tiene una vida media más corta, así $\tau_{2} \gg \tau_{1}$. 
+
+Experimentalmente \cite{Zyla}
+\begin{align}
+\tau\left(\PKzS\right) &= \SI{8,954(4)e-11}{\second} & \tau\left(\PKzL\right) &= \SI{5,116(21)e-8}{\second}
+\end{align}
 
 \subsection{Oscilaciones de mesones K}\label{sec:kaon_oscillations}
 
 A raíz de lo anterior, explicar las oscilaciones de kaones
+
+\section{Teoría Electrodébil}\label{sec:electroweak}
+Describir unificación de la interacción débil y la electromagnética
+e introducir formalismo $Z^0$
