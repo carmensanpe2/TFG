@@ -131,8 +131,81 @@ De estas definiciones se observa que $M_{11}$, $M_{22}$, $\Gamma_{11}$ y $\Gamma
 
 ----------------------------------------------------------------------- FIN ---------------------------------------------------------------------------------------------
 
+Adicionalmente, la densidad lagrangiana ${\mathcal{L}}^w$ que describe el decaimiento de los mesones $\PK$ por interacción débil es invariante de Lorentz, por lo que es posible definir la amplitud de probabilidad $\mathcal{M}$ como \cite{Halzen}:
+\begin{equation}
+\mathcal{M}=-i \int {\mathcal{L}}^w \left(x\right) d^{4}x \propto -i\int j_{\mu }W^{\mu }d^{4}x\label{eq:defM}
+\end{equation}
+La ecuación \ref{eq:defM} relaciona la amplitud de probabilidad $\mathcal{M}$ (también conocida como elemento de matriz) con el lagrangiano de la interacción $\mathcal{L}$ y, por lo tanto, proporciona información acerca de la dinámica de un proceso de decaimiento.
+
+A la hora de analizar el decaimiento de mesones $\PK$, la magnitud que más interesa calcular es la probabilidad de decaimiento o tasa de desintegración $\Gamma$. Esta tasa $\Gamma$ indica la probabilidad por unidad de tiempo de que el kaón (o cualquier partícula) sufra un proceso de desintegración. Por ejemplo, si se tiene un conjunto de partículas $N(t)$ en un instante $t$, una porción $N\Gamma dt$ de ellas decaerá en el próximo instante $dt$ \cite{Griffiths2008}:
+\begin{align}
+dN &= -\Gamma Ndt & N(t) &= N(0)e^{-\Gamma t}
+\end{align}
+
+Además, esta magnitud $\Gamma$ está relacionada con la semivida $\tau$ de la partícula según:
+\begin{equation}
+\tau=\dfrac{1}{\Gamma}\label{eq:meanlife}
+\end{equation}
+
+Como, en general, las partículas pueden decaer de distintas formas o modos, se tiene:
+\begin{align}
+\Gamma_{total} &= \sum_{i=1}^N \Gamma_i & \tau=\dfrac{1}{\Gamma_{total}}
+\end{align}
+
+Por este motivo, también es posible definir la ratio de desintegración o \textit{branching ratio} $BR$ para un modo de decaimiento $i$ dado:
+\begin{equation}
+BR(i)=\dfrac{\Gamma_{i}}{\Gamma_{total}}
+\end{equation}
+
+Para hallar $d\Gamma$, se hace uso de la \textit{Regla de Oro de Fermi} para procesos de desintegración del tipo $1 \rightarrow 2+3$:
+\begin{equation}
+d\Gamma =\left| \mathcal{M}\right| ^{2}\dfrac{S}{2m_{1}}\left[ \left( \dfrac{d^{3}\boldsymbol{p}_{2}}{\left( 2\pi \right) ^{3}2E_{2}}\right) \left( \dfrac{d^{3}\boldsymbol{p}_{3}}{\left( 2\pi \right) ^{3}2E_{3}}\right) \right] \times \left( 2\pi \right) ^{4}\delta ^{4}\left( p_{1}-p_{2}-p_{3}\right)\label{eq:defROF}
+\end{equation}
+donde $S$ es un producto de factores estadísticos: $\dfrac{1}{j!}$ por cada grupo de $j$ partículas idénticas en el estado final \cite{Griffiths2008}. Se recomienda al lector consultar el capítulo 5.6 de \cite{SakuraiQM} y el 2.4 de \cite{SakuraiMCR} si no se está familiarizado con la Teoría de Perturbaciones con dependencia temporal, la Regla de Oro de Fermi y las tasa de transición.
+
+En unidades naturales ($\hbar=c=1$), integrando la ecuación anterior \ref{eq:defROF}, se obtiene esta expresión para la probabilidad de decaimiento:
+\begin{equation}
+\Gamma=2\pi \left| \mathcal{M}\right| ^{2} \rho\left( E\right)
+\end{equation} 
+siendo $\rho\left(E\right) \equiv \rho$ la densidad de estados finales (o espacio de fases) del proceso. Este factor depende de las masas, las energías y los momentos de las partículas que intervienen en el decaimiento, es decir, contiene toda la información cinemática del proceso.
 
 
+Analizamos el diagrama de la figura \ref{fig:diagrama2} y aplicamos las reglas de Feynman para calcular la amplitud de decaimiento del proceso, con el objetivo de hallar la probabilidad $\Gamma$ de que ocurran tales modos de decaimiento. Este cálculo y la obtención de la $\Gamma$ correspondiente, se han realizado de forma personal. La extensión del procedimiento es larga, por lo que se ha decidido sólo mostrar en este capítulo las expresiones fundamentales mientras que el desarrollo detallado, paso por paso, puede consultarse en el Apéndice \hyperref[cap:B]{B}.
 
 
+Este cálculo y la obtención de la $\Gamma$ correspondiente, se han realizado de forma personal. La extensión del procedimiento es larga, por lo que se ha decidido sólo mostrar en este capítulo las expresiones fundamentales mientras que el desarrollo detallado, paso por paso, puede consultarse en el Apéndice \hyperref[cap:B]{B}.
 
+De las reglas 1-5 de Feynman, se puede escribir:
+\begin{multline}
+\int[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma ^{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)]F^{\mu} \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}\\ \times \left( 2\pi \right) ^{4}\delta ^{4}\left( q-p_{2}-p_{3}\right) \cancel{\left( 2\pi \right)^{4}}\delta ^{4}\left( p-q\right) \dfrac{d^{4}q}{\cancel{\left( 2\pi \right) ^{4}}}
+\end{multline}
+Aplicando las reglas 6-7 sabiendo que $p=q$ e integrando, se obtiene que:
+
+Sumando sobre todos los espines posibles de las partículas finales y haciendo la media, se llega a esta expresión:
+\begin{equation}
+\left\langle |\mathcal{M}|^{2}\right\rangle=\left[ \dfrac{f_{K}}{8}\left( \dfrac{g_w}{M_W}\right)^{2}\right]^{2} p_{\mu }p_{\nu} \left[ \overline{u}\left( 3\right)\gamma^{\mu}\left( 1-\gamma^{5}\right) v\left( 2\right) \right] \left[ \overline{u}\left( 3\right) \gamma^{\nu} \left( 1-\gamma^{5}\right) v\left( 2\right) \right] ^{\ast }
+\end{equation}
+
+Aplicando las propiedades de las trazas y las matrices de Dirac (ver eq. \ref{eq:casimir_trick}) y haciendo la media, se llega a la siguiente expresión:
+\begin{multline}
+\left\langle |\mathcal{M}|^{2}\right\rangle=\left[ \dfrac{f_{K}}{8}\left( \dfrac{g_w}{M_W}\right)^{2}\right]^{2} p_{\mu }p_{\nu}\Tr \left[ \gamma^{\mu } \left(1 -\gamma ^{5}\right) \slashed{p_{2}}\gamma^{\nu }\left( 1-\gamma ^{5}\right) \left( \slashed{p_{3}}+m_{\Pl}\right) \right]= \\ \dfrac{1}{8}\left[ f_{K}\left( \dfrac{g_w}{M_W}\right) ^{2}\right] ^{2}\left[2\left( p\cdot p_{2}\right) \left( p\cdot p_{3}\right) -p^{2}\left( p_{2}\cdot p_{3}\right)\right]\label{eq:amplitudM}
+\end{multline}
+
+Teniendo en cuenta que $p=p_{2}+p_{3}$ junto con $p^2={m_K}^2$ y ${p_3}^2={m_{\Pl}}^2$, y sabiendo que el antineutrino carece de masa: ${p_2}^2={m_{\nu}}^2=0$, reescribimos:
+\begin{align}
+p\cdot p_{2} &= p_{3} \cdot p_{2} & p \cdot p_{3} &= p_{2} \cdot p_{3}+{m_{\Pl}}^2
+\end{align}
+Además 
+\begin{equation}
+p^{2}={p_{2}}^{2}+{p_3}^{2}+2\left( p_{2} \cdot p_{3}\right) \longrightarrow 2\left( p_{2} \cdot p_{3}\right)=\left( m_{K}^{2}-m_{\Pl}^{2}\right)
+\end{equation}
+
+Sustituyendo en la ecuación \ref{eq:amplitudM}, se llega a:
+\begin{equation}
+\left\langle |\mathcal{M}|^{2}\right\rangle=\left( \dfrac{g_w}{2M_W}\right)^{4} {f_K}^2 {m_{\Pl}}^{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:amplitudmedia}
+\end{equation}
+
+Así, la expresión final para la probabilidad del decaimiento leptónico de $\PKm$ es:
+\begin{equation}
+\Gamma =\dfrac{{f_{K}}^{2}}{\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}{m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)^{2}\label{eq:decayrate}
+\end{equation}

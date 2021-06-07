@@ -41,7 +41,7 @@ Sumando sobre todos los espines posibles de las partículas finales y haciendo l
 \left\langle |\mathcal{M}|^{2}\right\rangle=\left[ \dfrac{f_{K}}{8}\left( \dfrac{g_w}{M_W}\right)^{2}\right]^{2} p_{\mu }p_{\nu} \left[ \overline{u}\left( 3\right)\gamma^{\mu}\left( 1-\gamma^{5}\right) v\left( 2\right) \right] \left[ \overline{u}\left( 3\right) \gamma^{\nu} \left( 1-\gamma^{5}\right) v\left( 2\right) \right] ^{\ast }
 \end{equation}
 
-Aplicando el truco de Casimir \ref{eq:casimir_trick}, nos deshacemos de los espinores y dejamos la expresión en función de las trazas:
+Aplicando la expresión \ref{eq:casimir_trick}, nos deshacemos de los espinores y dejamos la igualdad en función de las trazas:
 \begin{multline}
 \left[ \overline{u}\left( 3\right)\gamma^{\mu}\left( 1-\gamma^{5}\right) v\left( 2\right) \right] \left[ \overline{u}\left( 3\right) \gamma^{\nu }\left( 1-\gamma^{5}\right) v\left( 2\right) \right] \\ \equiv \Tr \left[ \gamma^{\mu } \left(1 -\gamma ^{5}\right) \slashed{p_{2}}\gamma^{\nu }\left( 1-\gamma ^{5}\right) \left( \slashed{p_{3}}+m_{\Pl}\right) \right]
 \end{multline}
@@ -112,79 +112,5 @@ Por lo tanto:
 
 Y, sustituyendo en la expresión \ref{eq:elementomatrix}, se obtiene:
 \begin{equation}
-\left\langle |\mathcal{M}|^{2}\right\rangle=\left( \dfrac{g_w}{2M_W}\right)^{4} {f_K}^2 {m_{\Pl}}^{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:meanamplitude}
-\end{equation}
-
-Para obtener la probabilidad de decaimiento, aplicamos la Regla de Oro de Fermi para las desintegraciones del tipo $ 1 \rightarrow 2+3$:
-\begin{equation}
-d\Gamma =\left| \mathcal{M}\right| ^{2}\dfrac{S}{2m_{1}}\left[ \left( \dfrac{d^{3}\boldsymbol{p}_{2}}{\left( 2\pi \right) ^{3}2E_{2}}\right) \left( \dfrac{d^{3}\boldsymbol{p}_{3}}{\left( 2\pi \right) ^{3}2E_{3}}\right) \right] \times \left( 2\pi \right) ^{4}\delta ^{4}\left( p_{1}-p_{2}-p_{3}\right) 
-\end{equation}
-
-Donde $S$ es un producto de factores estadísticos: $\dfrac{1}{j!}$ por cada grupo de $j$ partículas idénticas en el estado final \cite{Griffiths2008}.
-
-Integrando sobre todos los momentos, se obtiene:
-\begin{equation}
-\Gamma =\dfrac{S}{m_{K}}\left( \dfrac{1}{4\pi }\right) ^{2}\dfrac{1}{2}\int \dfrac{\left| \mathcal{M}\right| ^{2}}{E_{2}E_{3}}\delta ^{4}\left( p-p_{2}-p_{3}\right) d^{3}\boldsymbol{p}_{2}d^{3}\boldsymbol{p}_{3}
-\end{equation}
-
-Por simplicidad suponemos que la partícula que decae, el mesón $\PKm$ está en reposo. De este modo se tiene:
-\begin{itemize}
-\item $E_1=m_1=m_K$ y $\boldsymbol{p}=0$
-\item El antineutrino no tiene masa $m_{\nu}=$ pero sí momento $|E_2|=\boldsymbol{p_2}$
-\item El leptón sí tiene masa $m_{\Pl} \neq 0$, luego $E_3=\sqrt{m_{\Pl}+{p_{3}}^2}$
-\end{itemize}
-
-Expresando la función delta $\delta$ haciendo uso de lo anterior:
-\begin{equation}
-\delta ^{4}\left( p-p_{2}-p_{3}\right) =\delta \left( m_{K}-E_{2}-E_{3}\right) \delta ^{3}\left( -\boldsymbol{p}_{2}-\boldsymbol{p}_{3}\right) 
-\end{equation}
-
-Se puede reescribir la integral como:
-\begin{multline}
-\Gamma =\dfrac{S}{m_{K}}\dfrac{1}{2\left( 4\pi \right) ^{2}}\int \dfrac{\left|\mathcal{M}\right| ^{2}\delta ^{4}\left( p-p_{2}-p_{3}\right) }{\left| \boldsymbol{p}_{2}\right| \sqrt{{m_{\Pl}}^{2}+\boldsymbol{p}_{3} ^{2}}} d^{3}\boldsymbol{p}_{2} d^{3}\boldsymbol{p}_{3} = \\ \dfrac{S}{m_{K}}\dfrac{1}{2\left( 4\pi \right) ^{2}}\int \dfrac{\left|\mathcal{M}\right| ^{2}\delta\left(m_{K}-\boldsymbol{p}_{2}-\sqrt{{m_{\Pl}}^{2}+\boldsymbol{p}_{2} ^{2}}\right)}{ \left| \boldsymbol{p}_{2}\right| \sqrt{{m_{\Pl}}^{2}+\boldsymbol{p}_{2} ^{2}}} d^{3}\boldsymbol{p}_{2}
-\end{multline}
-
-Ahora la expresión únicamente depende de $\boldsymbol{p}_{2}$ y para resolverla introducimos las coordenadas esféricas, denotando $\left| \boldsymbol{p}_{2}\right|=\rho$. Se tiene entonces que:
-\begin{align}
-d^{3}\boldsymbol{p}_{2} &= \left| \boldsymbol{p}_{2}\right| ^{2}d\left|\boldsymbol{p}_{2}\right| \sin \theta d\theta d\phi & \int \sin \theta d\theta d\phi &= 4\pi
-\end{align}
-
-Por lo tanto:
-\begin{multline}
-\Gamma =\dfrac{S}{m_{K}}\dfrac{1}{2\left( 4\pi \right) ^{2}}\int ^{2\pi }_{0}\int ^{\pi }_{0}\int ^{\infty }_{0} \dfrac{\left|\mathcal{M}\right| ^{2}\delta\left(m_{K}-\rho-\sqrt{{m_{\Pl}}^{2}+\rho^{2}}\right)}{\cancel{\rho} \sqrt{{m_{\Pl}}^{2}+\rho^{2}}} \rho^{\cancel{2}}d{\rho}\sin \theta d\theta d\phi = \\ \dfrac{S}{8 \pi m_{K}}\int ^{\infty }_{0} \dfrac{\left|\mathcal{M}\right| ^{2}\delta\left(m_{K}-\rho-\sqrt{{m_{\Pl}}^{2}+\rho^{2}}\right)}{\sqrt{{m_{\Pl}}^{2}+\rho^{2}}} \rho d{\rho}
-\end{multline}
-
-A continuación, realizamos un cambio de variable 
-\begin{equation}
-E=\rho+\sqrt{{m_{\Pl}}^{2}+\rho^{2}}\label{cambioE}
-\end{equation}
-
-siendo $E$ la energía total de las partículas finales. Entonces, derivando:
-\begin{equation}
-\dfrac{dE}{d\rho}=\dfrac{d}{d\rho}\left( \sqrt{{m_{\Pl}}^{2}+{\rho}^{2}}+\rho\right) =\dfrac{\cancel{2}\rho}{\cancel{2}\sqrt{{m_{\Pl}}^{2}+\rho^{2}}}+1=\dfrac{\rho + \sqrt{{m_{\Pl}}^{2}+\rho^{2}}}{\sqrt{{m_{\Pl}}^{2}+\rho^{2}}}=\dfrac{E}{\sqrt{{m_{\Pl}}^{2}+\rho^{2}}}
-\end{equation}
-
-Y evaluando la delta de Dirac:
-\begin{equation}
-\delta \left(m_{K}-\rho-\sqrt{{m_{\Pl}}^{2}+\rho^{2}}\right)=\delta\left(m_{K}-E\right)=\delta\left(E-m_{K}\right)
-\end{equation}
-
-Finalmente, se sustituye lo anterior en la expresión de la integral, obteniéndose:
-\begin{equation}
-\Gamma=\dfrac{S}{8 \pi m_{K}}\int ^{\infty }_{m_K}\left| \mathcal{M}\right| ^{2}\dfrac{\rho}{E}\delta \left(E-m_{K}\right)
-\end{equation}
-
-Cuya solución es la fórmula de la probabilidad de decaimiento con $\rho=\boldsymbol{p}_2$ :
-\begin{equation}
-\Gamma =\dfrac{S\left| \mathcal{M}\right| ^{2}}{8\pi m_{K}^{2}}\rho\label{eq:decayratemalo}
-\end{equation}
-
-Despejando $\rho$ de la relación \ref{cambioE} y teniendo en cuenta la conservación de la energía del proceso, la energía total de los estados finales debe ser igual a la energía inicial $E=m_K$
-\begin{multline}
-E=\rho+\sqrt{{m_{\Pl}}^{2}+\rho^{2}} \rightarrow \left(m_{K}-\rho\right)^{2}= {m_{\Pl}}^{2}+\rho^{2} \rightarrow \\ {m_{K}}^{2}+\cancel{\rho^{2}}-2\rho m_{K}={m_{\Pl}}^{2}+\cancel{\rho^{2}} \rightarrow \rho = \dfrac{1}{2 m_K}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)
-\end{multline}
-
-En nuestro caso, como las partículas finales son distintas, el factor $S$ es simplemente 1. Sustituyendo en \ref{eq:decayratemalo} la expresión obtenida para la amplitud de probabilidad media \ref{eq:meanamplitude}, se tiene que:
-\begin{equation}
-\Gamma =\dfrac{{f_{K}}^{2}}{\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}{m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)^{2}\label{eq:decayratebueno}
+\left\langle |\mathcal{M}|^{2}\right\rangle=\left( \dfrac{g_w}{2M_W}\right)^{4} {f_K}^2 {m_{\Pl}}^{2}\left( {m_{K}}^{2}-{m_{\Pl}}^{2}\right)\label{eq:averageM}
 \end{equation}

@@ -155,19 +155,19 @@ Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamm
 y cumple que: $\gamma^5 \gamma^5 = 1$.
 
 \subsubsection{Covariantes bilineales}\label{sec:bilinearcov}
-Los covariantes bilineales $\widehat{\Gamma}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
+Los covariantes bilineales $\widehat{\mathcal{O}}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l*{8}{c}r}
 \hline
-Expresiones de $\widehat{\Gamma}$  & Carácter & Nº. Matrices\\ 
+Expresiones de $\widehat{\mathcal{O}}$  & Carácter & Nº. Matrices\\ 
 \hline
-$\widehat{\Gamma}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
-$\widehat{\Gamma}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
-$\widehat{\Gamma}^{T}_{\mu\nu} = \hat{\sigma}_{\mu\nu}-\hat{\sigma}_{\nu\mu}$ & Tensorial (T) & 6\\
-$\widehat{\Gamma}_{\mu}^{A} = \gamma_{5}\gamma_{\mu}$ & Vector axial (A) & 4\\
-$\widehat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
+$\widehat{\mathcal{O}}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
+$\widehat{\mathcal{O}}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
+$\widehat{\mathcal{O}}^{T}_{\mu\nu} = \hat{\sigma}_{\mu\nu}-\widehat{\sigma}_{\nu\mu}$ & Tensorial (T) & 6\\
+$\widehat{\mathcal{O}}_{\mu}^{A} = \gamma_{5}\gamma_{\mu}$ & Vector axial (A) & 4\\
+$\widehat{\mathcal{O}}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
 \hline
 	\end{tabular}
 \caption[Covariantes bilineales]{Covariantes bilineales. \cite{MCR}, \cite{GreinerRQM}}
@@ -177,15 +177,15 @@ $\widehat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
 con $\hat{\sigma}^{\mu\nu}= \dfrac{i}{2} \left(\gamma^{\mu}\gamma^{\nu} - \gamma^{\nu}\gamma^{\mu} \right)$.
 
 %\sum_s u(\boldsymbol{p},s)\overline{u}(\boldsymbol{p},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{p},s)\overline{v}(\boldsymbol{p},s) &= (\slashed{p}-m)
-\subsubsection{El truco de Casimir y los teoremas de las trazas}\label{sec:trazas}
-El truco de Casimir es útil a la hora de calcular la amplitud media $\left\langle|\mathcal{M}|^2\right\rangle$ de un proceso de decaimiento haciendo uso de las trazas de las matrices.
+\subsubsection{Propiedades de las matrices de Dirac y teoremas de las trazas}\label{sec:trazas}
+Existe un método basado en los teoremas de las trazas y las propiedades de las matrices de Dirac que se emplea a la hora de calcular la amplitud media $\left\langle|\mathcal{M}|^2\right\rangle$ de un proceso de decaimiento. Su expresión es la siguiente:
 \begin{equation}
 \sum _{spins}\left[ \overline{u}\left( a\right) \Gamma_{1}u\left( b\right) \right] \left[ \overline{u}\left( a\right) \Gamma _{2}u\left( b\right) \right] ^{\ast }= \Tr\left[ \Gamma _{1}\left( \slashed{p_{b}}+m_{b}c\right) \cdot \overline{\Gamma }_{2}\left( \slashed{p_{a}}+m_{c}c\right) \right]\label{eq:casimir_trick}
 \end{equation}
 
 Una demostración detallada de esta herramienta matemática puede encontrarse en la sección 7.7 de la referencia \cite{Griffiths2008}.
 
-Las principales identidades de las matrices y los teoremas de las trazas son los siguientes:
+A continuación, se enumeran las principales identidades de las matrices y los teoremas de las trazas:
 
 \begin{enumerate}
 \setlength{\itemsep}{0.2\baselineskip}
