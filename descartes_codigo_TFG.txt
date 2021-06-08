@@ -209,3 +209,35 @@ Así, la expresión final para la probabilidad del decaimiento leptónico de $\P
 \begin{equation}
 \Gamma =\dfrac{{f_{K}}^{2}}{\pi {m_{K}}^{3}}\left( \dfrac{g_w}{4M_W}\right)^{4}{m_{\Pl}}^{2}\left({m_{K}}^{2}-{m_{\Pl}}^{2}\right)^{2}\label{eq:decayrate}
 \end{equation}
+
+
+Si $\PKm$ y $\Pgpm$ tuvieran la misma distribución de quarks con el mismo tipo de sabores, uno esperaría que los valores de  $f_{\PK}$ y $f_{\Pgp}$ fueran considerablemente más parecidos. Esta afirmación es demasiado fuerte y no existe ninguna razón para ello. De hecho, de cálculos en QCD, salen resultados algo distintos.
+
+-------------------------- APÉNDICE A --------------------
+
+y, a su vez, cada bi-espinor puede expresarse en términos de dos espinores de 2 componentes:
+\begin{align}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} \psi_{1} \\ \psi_{2} \end{pmatrix} \qquad
+v(\boldsymbol{p},s)=\begin{pmatrix} \psi_{3} \\ \psi_{4}\label{eq:espinores} \end{pmatrix}
+\endgroup
+\end{align}
+
+\begin{equation}
+\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{\sigma}}{p}
+\end{equation} 
+
+------------------ CP VIOLATION -----------------------------
+
+$\tau\left(\PKzL\right)\equiv \tau_{2}$ mayor que $\tau\left(\PKzS\right) \equiv \tau_{1}$
+
+
+Lo podemos ver mas adelante, pero en algun momento de este capitulo se podria mencionar brevemente que esa violacion CP en la interaccion debil tambien se da en estudios de oscilaciones de neutrinos vs. oscilaciones de antineutrinos y que es de gran relevancia en la Fisica actual, pues podria dar respuesta a la asimetria materia antimateria del universo. El caso de los kaones (donde algunos pueden oscilar como los neutrinos) tambien podria aplicarse a ese estudio pero la "cantidad" de violacion CP en procesos con kaones es demasiado pequeña con lo que no seria suficiente para explicar esa asimetria del universo. Añadire algunas referencias al correo. Puede estar bien mencionarlo en un par de lineas para concluir alguna parte del capitulo
+
+aqui puedes completar con algo muy breve con lo que comente al principio sobre las oscilaciones de neutrinos y antineutrinos y la violacion CP por la distinta forma en que parecen oscilar, ya que se ha visto que la violacion CP en kaones no es lo suficientemente importante para explicar la asimetria materia-antimateria.
+
+
+Generalmente, las oscilaciones pueden ocurrir independientemente de que la partícula exhiba violación CP. Los requisitos son que pero en el caso de kaones, ambos conceptos están ligados. No obstante, los neutrinos son partículas que s
+

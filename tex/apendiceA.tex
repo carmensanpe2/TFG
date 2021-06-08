@@ -9,26 +9,27 @@
 \renewcommand{\theequation}{A.\arabic{equation}}
 
 \section{Transformaciones de Lorentz y Cuadrivectores}\label{sec:Lorentz}
-Las \textit{Transformaciones de Lorentz} (LT) son las expresiones matemáticas encargadas de relacionar un suceso observado desde dos sistemas de referencia inerciales distintos, en base a los postulados de la Teoría de Relatividad Especial. Son las siguientes:
-\setlength{\abovedisplayskip}{6pt}
-\setlength{\belowdisplayskip}{6pt}
+Las \textit{Transformaciones de Lorentz} (TL) son las expresiones matemáticas encargadas de relacionar un suceso observado desde dos sistemas de referencia inerciales distintos, en base a los postulados de la Teoría de Relatividad Especial. Para el caso particular de dos sistemas inerciales moviéndose uno respecto a otro en la dirección x, podemos expresar:
+%\setlength{\abovedisplayskip}{6pt}
+%\setlength{\belowdisplayskip}{6pt}
 \begin{align}
-x' &= \dfrac{x-vt}{\sqrt{1-v^2/c^2}} & y' &=y & z' &=z & t' &=\dfrac{t-xv/c^2}{\sqrt{1-v^2/c^2}}\label{eq:TLorentz1}
+x' &= \dfrac{x-vt}{\sqrt{1-v^2/c^2}}, & y' &=y, & z' &=z, & t' &=\dfrac{t-xv/c^2}{\sqrt{1-v^2/c^2}}.\label{eq:TLorentz1}
 \end{align}
 
-La forma más sencilla de expresar las LT es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar fácilmente qué magnitudes son escalares, es decir, invariantes frente a las LT (formulación covariante) \cite{MCR}.
+La forma más sencilla de expresar las TL es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar fácilmente qué magnitudes son escalares, es decir, invariantes frente a las TL (formulación covariante) \cite{MCR}.
 \begin{align}
 (ct,x, y, z) &=(x^0, x^1, x^2, x^3)=X^\mu & (E,cp_x, cp_y, cp_z) &=(p^0, p^1, p^2, p^3)=P^\mu
 \end{align}
-Hay dos tipos de cuadrivectores:
+Se definen cuadrivectores:
 \begin{itemize}
 \item Contravariante (índice arriba): $X^\mu=(x^0, x^1, x^2, x^3)=(x^0,\textbf{x}) \rightarrow (t,\vec{\boldsymbol{x}})$
 \item Covariante (índice abajo): $X_\mu=(x_0, x_1, x_2, x_3)=(x_0,-\textbf{x}) \rightarrow (t,-\vec{\boldsymbol{x}})$
 \end{itemize} 
-Para relacionarlos, se usa el tensor métrico $g_{\mu\nu}$ que define la métrica del espacio-tiempo de Minkowski \cite{MCR}.
+La relación entre los mismos viene dada por el tensor métrico $g_{\mu\nu}$ que define la métrica del espacio-tiempo de Minkowski \cite{MCR}.
 \begin{align}
-A_{\mu } &=\sum ^{3}_{\nu =0}g_{\mu \nu }A^{\nu} \equiv g_{\mu \nu }A^{\nu} & A^{\mu } &=\sum ^{3}_{\nu =0}g^{\mu \nu }A_{\nu} \equiv g^{\mu \nu }A_{\nu} \label{eq:metrica}
+A_{\mu } &=\sum ^{3}_{\nu =0}g_{\mu \nu }A^{\nu} \equiv g_{\mu \nu }A^{\nu}, & A^{\mu } &=\sum ^{3}_{\nu =0}g^{\mu \nu }A_{\nu} \equiv g^{\mu \nu }A_{\nu} . \label{eq:metrica}
 \end{align}
+\newline
 con $g_{\mu\nu} = g^{\mu\nu}$, siendo:
 \begin{equation}
 g_{\mu\nu} = 
@@ -40,7 +41,7 @@ g_{\mu\nu} =
 & -1 & & \\
 & & -1 & \\
 & & & -1
-\end{pmatrix}
+\end{pmatrix} .
 \endgroup
 \end{equation}
 Además, se cumple lo siguiente:
@@ -49,21 +50,22 @@ Además, se cumple lo siguiente:
 \item Producto escalar de dos cuadrivectores $A^{\mu}=\left( a^{0},\boldsymbol{a}\right)$ y $B^{\mu}=\left( b_{0},\boldsymbol{b}\right)$: $A\cdot B=A^{\mu }B_{\mu }=A_{\mu }B^{\mu }=a_{0}b^{0}- \boldsymbol{a}\cdot \boldsymbol{b}$. El escalar resultante se dice que es un invariante de Lorentz.
 \end{itemize}
 
-Por lo tanto, las LT para las componentes contravariantes y covariantes, respectivamente, pueden expresarse \cite{MCR} tal que así:
+Por lo tanto, las TL para las componentes contravariantes y covariantes, respectivamente, pueden expresarse \cite{MCR} en la forma:
 \begin{align}
-X'^{\mu } &=\Lambda\indices{^\mu _\nu}X^\nu & X'_{\mu } &=\Lambda\indices{_\mu ^\nu}X_\nu \label{eq:LTcovariant}
+X'^{\mu } &=\Lambda\indices{^\mu _\nu}X^\nu , & X'_{\mu } &=\Lambda\indices{_\mu ^\nu}X_\nu . \label{eq:LTcovariant}
 \end{align}
 En general, $\Lambda\indices{^\mu _\nu} \neq \Lambda\indices{_\mu ^\nu}$.  Gracias a todo esto, se pueden definir los siguientes operadores:
 \begin{align}
-\partial _{\mu} &= \dfrac{\partial}{\partial x^{\mu}}=\left( \dfrac{\partial }{c\partial t},\vec{\nabla} \right) & \partial ^{\mu } &= \dfrac{\partial }{\partial x_{\mu }}=\left( \dfrac{\partial }{c\partial t},-\vec{\nabla} \right) & \partial ^{\mu }\partial _{\mu }&= \dfrac{\partial ^{2}}{c^{2}\partial t^{2}}-\nabla ^{2} \equiv\square
+\partial _{\mu} &= \dfrac{\partial}{\partial x^{\mu}}=\left( \dfrac{\partial }{c\partial t},\vec{\nabla} \right), & \partial ^{\mu } &= \dfrac{\partial }{\partial x_{\mu }}=\left( \dfrac{\partial }{c\partial t},-\vec{\nabla} \right), & \partial ^{\mu }\partial _{\mu }&= \dfrac{\partial ^{2}}{c^{2}\partial t^{2}}-\nabla ^{2} \equiv\square .
 \end{align}
 \vspace{5mm}
 
 \section{Ecuación de Dirac: Matrices y espinores}\label{sec:Dirac}
 La ecuación de Dirac es una función de onda relativista que permite describir partículas fermiónicas ($s=1/2$). En el sistema natural de unidades $c=\hbar =1$, tiene esta expresión:
 \begin{equation}
-i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta m\Psi \equiv\widehat{H}\Psi \label{eq:Dirac}
+i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta m\Psi \equiv\widehat{H}\Psi . \label{eq:Dirac}
 \end{equation}
+
 Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\footnote{La representación de Dirac-Pauli es la más común, pero otras representaciones son posibles, como la que hace uso de la base de Weyl.} dichas matrices son:
 \begin{align}
 \alpha _{i}=
@@ -71,27 +73,27 @@ Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\fo
 \renewcommand*{\arraystretch}{0.8}
 \setlength\arraycolsep{10pt}
 \begin{pmatrix} 
-0 & \boldsymbol{\sigma_{i}} \\ \boldsymbol{\sigma_{i}} & 0 \end{pmatrix} \qquad
-\beta =\begin{pmatrix} \mathbb{1} & 0 \\ 0 & -\mathbb{1} \end{pmatrix}
+0 & \boldsymbol{\sigma_{i}} \\ \boldsymbol{\sigma_{i}} & 0 \end{pmatrix}, \qquad
+\beta =\begin{pmatrix} \mathbb{1} & 0 \\ 0 & -\mathbb{1} \end{pmatrix},
 \endgroup
 \end{align}
-siendo las \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
+siendo \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
 \begin{align}
 \sigma _{x}=
 \begingroup 
 \renewcommand*{\arraystretch}{0.8}
 \setlength\arraycolsep{10pt}
 \begin{pmatrix} 
-0 & 1 \\ 1 & 0 \end{pmatrix} \qquad \sigma_y
+0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad \sigma_y
 \begin{pmatrix} 
-0 & -i \\ i & 0 \end{pmatrix} \qquad
-\sigma_z =\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+0 & -i \\ i & 0 \end{pmatrix}, \qquad
+\sigma_z =\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
 \endgroup
 \end{align}
 
 A partir de los coeficientes anteriores y utilizando notación en cuadrivectores, se obtienen las \textit{Matrices de Dirac} o \textit{Matrices Gamma}  $\gamma^{\mu}=(\gamma^0, \boldsymbol{\gamma^{i}})=(\gamma^0, \gamma^1, \gamma^2, \gamma^3)$:
 \begin{align}
-\gamma ^0 &\equiv \beta & \gamma ^i &\equiv \beta \alpha_i \hspace{1cm} i=1, 2, 3 \label{eq:matricesDirac}
+\gamma ^0 &\equiv \beta , & \gamma ^i &\equiv \beta \alpha_i , \hspace{1cm} i=1, 2, 3 \label{eq:matricesDirac}
 \end{align}
 Las matrices de Dirac $\gamma^{\mu}$ satisfacen la relación de anticonmutación \cite{MCR}:
 \begin{equation}
@@ -103,65 +105,54 @@ Las matrices de Dirac $\gamma^{\mu}$ satisfacen la relación de anticonmutación
 \end{itemize}
 
 Entonces la ecuación de Dirac, sabiendo que $\beta^2=\mathbb{1}$, se reformula como \cite{MCR}:
-
 \begin{equation}
-i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0\label{eq:ecDirac_cov}
+i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0 .\label{eq:ecDirac_cov}
 \end{equation}
 
 Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynman} \cite{MCR}, definimos el siguiente operador:
 \begin{equation}
-\slashed{\partial}=\gamma_{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla\label{eq:slashnot}
+\slashed{\partial}=\gamma_{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla .\label{eq:slashnot}
 \end{equation}
 Por lo que la ecuación de Dirac resulta:
 \begin{equation}
-\left(i \slashed{\partial}-m\right) \Psi =0\label{eq:Dirac_final}
+\left(i \slashed{\partial}-m\right) \Psi =0 .\label{eq:Dirac_final}
 \end{equation}
 Asimismo, para partículas libres, usando que $\widehat{p}^{\mu} \rightarrow i\partial^{\mu} \Rightarrow \slashed{\widehat{p}} \rightarrow i\slashed{\partial}$ \cite{MCR}, la ecuación de Dirac queda:
 \begin{equation}
-\left( \slashed{\widehat{p}}-m\right) \Psi =0\label{eq:Dirac_free}
+\left( \slashed{\widehat{p}}-m\right) \Psi =0 .\label{eq:Dirac_free}
 \end{equation}
 
-Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se representan como autovectores de 4 componentes o bi-espinores, conocidos como \textit{espinores de Dirac} \cite{MCR} y, a su vez, cada bi-espinor puede expresarse en términos de dos espinores de 2 componentes:
-\begin{align}
-\begingroup 
-\renewcommand*{\arraystretch}{0.8}
-\setlength\arraycolsep{10pt}
-\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} \psi_{1} \\ \psi_{2} \end{pmatrix} \qquad
-v(\boldsymbol{p},s)=\begin{pmatrix} \psi_{3} \\ \psi_{4}\label{eq:espinores} \end{pmatrix}
-\endgroup
-\end{align}
-El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
+Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se representan como autovectores de 4 componentes, conocidos como \textit{espinores de Dirac} \cite{MCR}. La notación más habitual para representar los espinores de Dirac es $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$.
 
-Los espinores $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$ y sus conjugados cumplen la ecuación de Dirac \cite{Donelly}:
+El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. La dos componentes superiores (inferiores) de cada espinor de Dirac está relacionado con los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones adjuntas de Dirac se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente. Los espinores $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$ y sus adjuntos cumplen la ecuación de Dirac \cite{Donelly}:
 \begin{equation}
 \begin{aligned}
-(\slashed{p}-m)u(\boldsymbol{p},s) &=0 & (\slashed{p}+m)v(\boldsymbol{p},s) &=0 \\
-\overline{u}(\boldsymbol{p},s)(\slashed{p}-m) &=0 & \overline{v}(\boldsymbol{p},s )(\slashed{p}+m)&=0
+(\slashed{p}-m)u(\boldsymbol{p},s) &=0, \hspace{1cm} & (\slashed{p}+m)v(\boldsymbol{p},s) &=0, \\
+\overline{u}(\boldsymbol{p},s)(\slashed{p}-m) &=0, \hspace{1cm} & \overline{v}(\boldsymbol{p},s )(\slashed{p}+m)&=0 .
 \end{aligned}
 \end{equation}
 La normalización de espinores es \cite{MCR}:
 \begin{align}
-\overline{u}(\boldsymbol{p},s)u(\boldsymbol{p},s) &= 1 & \overline{v}(\boldsymbol{p},s)v(\boldsymbol{p},s) &= -1
+\overline{u}(\boldsymbol{p},s)u(\boldsymbol{p},s) &= 1, & \overline{v}(\boldsymbol{p},s)v(\boldsymbol{p},s) &= -1.
 \end{align}
-Y la relación de completitud \cite{MCR}:  %a \cite{Paschos}:
+Relación de completitud \cite{MCR}:  %a \cite{Paschos}:
 \begin{equation}
-\sum _{s}\left| u_{\alpha }\left(\boldsymbol{p},s\right) \overline{u}_{\beta }\left(\boldsymbol{p},s\right) -v_{\alpha }\left(\boldsymbol{p},s\right) \overline{v}_{\beta }\left(\boldsymbol{p},s\right) \right| =\delta _{\alpha \beta }
+\sum _{s}\left| u_{\alpha }\left(\boldsymbol{p},s\right) \overline{u}_{\beta }\left(\boldsymbol{p},s\right) -v_{\alpha }\left(\boldsymbol{p},s\right) \overline{v}_{\beta }\left(\boldsymbol{p},s\right) \right| =\delta _{\alpha \beta }.
 \end{equation}
-
-Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamma^5$, cuya expresión en la representación de Dirac es:
+Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamma^5$, cuya expresión es:
 \begin{equation}
 \gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3\label{eq:gamma5}
 \end{equation}
 y cumple que: $\gamma^5 \gamma^5 = 1$.
 
 \subsubsection{Covariantes bilineales}\label{sec:bilinearcov}
-Los covariantes bilineales $\widehat{\mathcal{O}}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
+Los covariantes bilineales $\overline{u}\widehat{\mathcal{O}}u$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre sus propiedades de transformación bajo TL.
 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l*{8}{c}r}
 \hline
-Expresiones de $\widehat{\mathcal{O}}$  & Carácter & Nº. Matrices\\ 
+Expresiones de $\widehat{\mathcal{O}}$  & Carácter $\overline{u}\widehat{\mathcal{O}}u$ & Nº. Matrices\\ 
 \hline
 $\widehat{\mathcal{O}}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
 $\widehat{\mathcal{O}}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
@@ -177,10 +168,10 @@ $\widehat{\mathcal{O}}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
 con $\hat{\sigma}^{\mu\nu}= \dfrac{i}{2} \left(\gamma^{\mu}\gamma^{\nu} - \gamma^{\nu}\gamma^{\mu} \right)$.
 
 %\sum_s u(\boldsymbol{p},s)\overline{u}(\boldsymbol{p},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{p},s)\overline{v}(\boldsymbol{p},s) &= (\slashed{p}-m)
-\subsubsection{Propiedades de las matrices de Dirac y teoremas de las trazas}\label{sec:trazas}
-Existe un método basado en los teoremas de las trazas y las propiedades de las matrices de Dirac que se emplea a la hora de calcular la amplitud media $\left\langle|\mathcal{M}|^2\right\rangle$ de un proceso de decaimiento. Su expresión es la siguiente:
+\subsubsection{Teoremas de trazas de las matrices de Dirac}\label{sec:trazas}
+La amplitud media $\left\langle|\mathcal{M}|^2\right\rangle$ de un proceso de decaimiento puede calcularse haciendo uso de las trazas de las matrices de Dirac:
 \begin{equation}
-\sum _{spins}\left[ \overline{u}\left( a\right) \Gamma_{1}u\left( b\right) \right] \left[ \overline{u}\left( a\right) \Gamma _{2}u\left( b\right) \right] ^{\ast }= \Tr\left[ \Gamma _{1}\left( \slashed{p_{b}}+m_{b}c\right) \cdot \overline{\Gamma }_{2}\left( \slashed{p_{a}}+m_{c}c\right) \right]\label{eq:casimir_trick}
+\sum _{spins}\left[ \overline{u}\left( a\right) \Gamma_{1}u\left( b\right) \right] \left[ \overline{u}\left( a\right) \Gamma _{2}u\left( b\right) \right] ^{\ast }= \Tr\left[ \Gamma _{1}\left( \slashed{p_{b}}+m_{b}c\right) \cdot \overline{\Gamma }_{2}\left( \slashed{p_{a}}+m_{c}c\right) \right].\label{eq:casimir_trick}
 \end{equation}
 
 Una demostración detallada de esta herramienta matemática puede encontrarse en la sección 7.7 de la referencia \cite{Griffiths2008}.
@@ -228,20 +219,30 @@ con $\varepsilon^{\mu\nu\lambda\sigma} = \left\{\begin{array}{lr}
         +1, & \text{si $\mu\nu\lambda\sigma$ es una permutación impar de 0123},\\
         0, & \text{si hay dos índices iguales}.
         \end{array}\right. $
+\newline
+
+\vspace{5mm}
 
 \section{Helicidad y Quiralidad}\label{sec:quirality}
-En las expresiones anteriores de la corriente débil aparece el operador $\gamma^5$, que indica la quiralidad de las partículas. A menudo, quiralidad y helicidad son conceptos confundidos. Por este motivo, es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada uno.
+En las expresiones de la corriente débil aparece el operador $\gamma^5$, que indica la quiralidad de las partículas. A menudo, quiralidad y helicidad son conceptos confundidos. Por este motivo, es conveniente hacer un paréntesis y explicar con detalle en qué consiste cada uno.
 
-La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco teórico de la TCC, la helicidad de la partícula se representa mediante el operador helicidad $\mathcal{H}$:
-
+La helicidad se define como la proyección del espín de una partícula en la dirección de su momento $\vec{p}$. En el marco de la TCC, el operador de proyección de espín se expresa:
 \begin{equation}
-\mathcal{H}=\dfrac{1}{2} \dfrac{\vec{p} \cdot \vec{\sigma}}{p}
+\mathcal{P}_{\pm}\left(s\right)=\dfrac{1}{2} \left(1 \pm \gamma _{s}\slashed{s}\right),
 \end{equation} 
+donde $\slashed{s}\equiv \gamma_{\mu} s^{\mu}$, siendo $s=\left(s^0, s^{\mu}\right)$ el denominado cuadrivector de espín (ver Ref. \cite{GreinerRQM}, \cite{Griffiths} y \cite{MCR} para detalles). En el caso en que se tome como dirección de proyección de espín la dirección del movimiento, el operador previo se denomina helicidad, y viene determinado por la expresión:
+\begin{equation}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\widehat{\Lambda}_{h}\left(p\right)=\dfrac{1}{2p} \begin{pmatrix} 
+\boldsymbol{\sigma} \cdot \boldsymbol{\vec{p}} & 0 \\ 0 & \boldsymbol{\sigma} \cdot \boldsymbol{\vec{p}} \end{pmatrix}.
+\endgroup
+\end{equation}
+\newline
+En el límite no relativista, se reduce a $\dfrac{\boldsymbol{\sigma} \cdot \boldsymbol{\vec{p}} }{2p}$. Para un fermión de espín $1/2$, los estados de helicidad serían $+1/2$ (helicidad positiva), si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ (helicidad negativa) en el caso contrario \cite{Bettini}. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
 
-Para una partícula fermiónica (de espín $1/2$), los autovalores de $\mathcal{H}$ son $+1/2$ (helicidad positiva), si la dirección de su espín coincide con la dirección de su movimiento, y $-1/2$ (helicidad negativa) en el caso contrario \cite{Bettini}. Así pues, los autoestados de helicidad se corresponden a espinores de dos componentes. En general, si la partícula tiene una masa distinta de cero, la helicidad no es un invariante de Lorentz.
-
-La quiralidad es una propiedad de los bi-espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo o derecha (R) y negativo o izquierda (L), y sus proyectores son:
-
+La quiralidad es una propiedad de los espinores que se utilizan para definir partículas y se representa por los autoestados del operador $\gamma^5$, con valores propios $\pm 1$. Los estados de quiralidad son designados como positivo o derecha (R) y negativo o izquierda (L), y sus proyectores son:
 \begin{align}
 \psi_L &= \dfrac{1-\gamma^5}{2}\psi & \psi_R &= \dfrac{1+\gamma^5}{2}\psi
 \end{align}
