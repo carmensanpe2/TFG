@@ -238,6 +238,48 @@ Lo podemos ver mas adelante, pero en algun momento de este capitulo se podria me
 
 aqui puedes completar con algo muy breve con lo que comente al principio sobre las oscilaciones de neutrinos y antineutrinos y la violacion CP por la distinta forma en que parecen oscilar, ya que se ha visto que la violacion CP en kaones no es lo suficientemente importante para explicar la asimetria materia-antimateria.
 
+\begin{table}[!htb]
+\begin{minipage}{.5\linewidth}
+    \centering
+\begin{tabular}{ c c } 
+\toprule
+\makecell{Mesón $\PKzS$}  &  $BR$ \\
+\midrule   
+$\Pgpp\Pgpm$ & $69.2\%$ \\
+$\Pgpz\Pgpz$ & $30.7\%$ \\
+$\Pgpz\Pgpz\Pgpz$ & $<\num{2.6e-8}$ \\
+$\Pgpp\Pgpm\Pgpz$ & $\num{3.5e-7}$ \\ \hdashline
+$\Pgppm\Pemp\Pnue$ & $\num{7.04e-4}$ \\
+$\Pgppm\Pmump\Pnum$ & $\num{4.69e-4}$ \\
+\bottomrule
+\end{tabular}
+\caption[Modos de decaimiento de $\PKzS$]{Modos y $BR$ de $\PKzS$ \cite{Thomson}\cite{Zyla}.}
+\label{tab:KpzS_decay}
+\end{minipage}\hfill
+\begin{minipage}{.5\linewidth}
+    \centering
+\begin{tabular}{ c c } 
+    \toprule
+    \makecell{Mesón $\PKzL$}  &  $BR$ \\    
+    \midrule
+$\Pgpp\Pgpm$ & $0.20\%$ \\
+$\Pgpz\Pgpz$ & $0.09\%$ \\
+$\Pgpz\Pgpz\Pgpz$ & $19.5\%$ \\
+$\Pgpp\Pgpm\Pgpz$ & $12.5\%$ \\ \hdashline
+$\Pgppm\Pemp\Pnue$ & $40.55\%$ \\
+$\Pgppm\Pmump\Pnum$ & $27.04\%$ \\
+    \bottomrule
+\end{tabular}
+\caption[Modos de decaimiento de $\PKzL$]{Modos y $BR$ de $\PKzL$ \cite{Thomson}\cite{Zyla}.}
+\label{tab:KpzL_decay}
+\end{minipage}
+\end{table}
+
+
+
+A pesar de que ahora se investiga la violación CP con neutrinos como causa de la asimetría entre materia y antimateria, su descubrimiento en kaones abrió una puerta muy importante a la exploración de los orígenes y evolución del Universo.
+enigma $\tau-\theta$ y experimento de Wu
+
 
 
 
