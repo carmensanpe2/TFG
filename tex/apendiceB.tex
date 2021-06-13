@@ -18,21 +18,28 @@ El decaimiento leptónico $\PKm \rightarrow \Plm + \Pagnl$ puede observarse en l
 \item antineutrino final $\Pagnl$: masa $m_{\nu}=0$ y cuadri-momento $p_2$.
 \item leptón final $\Plm$: masa $m_{\Pl}$ y cuadri-momento $p_3$.
 \end{itemize}
-A partir del razonamiento expuesto en la sección \ref{sec:charged_kaon_decay} y empleando unidades naturales, se llega a la expresión de la integral:
+
+Analizamos el diagrama de la figura \ref{fig:diagrama2} y aplicamos las reglas de Feynman (presentadas al final de la sección \ref{sec:charged_kaon_decay}) para calcular la amplitud de decaimiento $\mathcal{M}$ del proceso. De las reglas 1-5 de Feynman y empleando unidades naturales, se llega a la expresión de la integral:
 \begin{multline}
-\int[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma ^{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)]F^{\mu} \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}\\ \times \left( 2\pi \right) ^{4}\delta ^{4}\left( q-p_{2}-p_{3}\right) \cancel{\left( 2\pi \right)^{4}}\delta ^{4}\left( p-q\right) \dfrac{d^{4}q}{\cancel{\left( 2\pi \right) ^{4}}} .
+\int[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma _{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)]\dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}F^{\mu}\\ \times \left( 2\pi \right) ^{4}\delta ^{4}\left( q-p_{2}-p_{3}\right) \cancel{\left( 2\pi \right)^{4}}\delta ^{4}\left( p-q\right) \dfrac{d^{4}q}{\cancel{\left( 2\pi \right) ^{4}}} . \label{eq:intM}
 \end{multline}
-Integramos sabiendo que $p=q$, obteniendo lo siguiente:
+
+Con este desarrollo estamos construyendo una ecuación que nos permitirá calcular la amplitud $\mathcal{M}$. Esta integral (\ref{eq:intM}) se corresponde a la parte derecha de dicha igualdad.
+
+Integramos como nos indica la regla 6 del cálculo de Feynman y, sabiendo que $p=q$, se obtiene lo siguiente:
 \begin{equation}
-[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma ^{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)]F^{\mu} \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}\left( 2\pi \right) ^{4}\delta ^{4}\left(p-p_{2}-p_{3}\right) .
+[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma _{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)] \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}F^{\mu}\left( 2\pi \right) ^{4}\delta ^{4}\left(p-p_{2}-p_{3}\right) .
 \end{equation}
-A continuación, hacemos uso de la función $\delta$, $\left( 2\pi \right) ^{4}\delta ^{4}\left(p-p_{2}-p_{3}\right)$ e igualamos a $-i\mathcal{M}$, de acuerdo a las reglas de Feynman para calcular la amplitud de probabilidad $\mathcal{M}$:
+
+A continuación, de acuerdo con la regla 7 de Feynman, hacemos uso de la función $\delta$, $\left( 2\pi \right) ^{4}\delta ^{4}\left(p-p_{2}-p_{3}\right)$ e igualamos a $-i\mathcal{M}$ (parte izquierda) para calcular $\mathcal{M}$:
+
 \begin{equation}
-[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma ^{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)]F^{\mu} \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}=-i\mathcal{M} .
+-i\mathcal{M}=[\overline{u}\left( 3\right) \left( \dfrac{-ig_w}{2\sqrt{2}}\right) ^{2}\gamma _{\mu }\left( 1-\gamma ^{5}\right) v\left( 2\right)] \dfrac{ig{_{\mu \nu}}}{\left( M_W\right)^{2}}F^{\mu} .
 \end{equation}
+
 Finalmente, se obtiene:
 \begin{equation}
-\mathcal{M} =\dfrac{{g_{w}}^2}{8\left( M_W\right)^{2}}\left[ \overline{u}\left(3\right) \gamma^{\mu}\left( 1-\gamma ^{5} \right) v\left( 2\right) \right] F^{\mu} .
+\mathcal{M} =\dfrac{{g_{w}}^2}{8\left( M_W\right)^{2}}\left[ \overline{u}\left(3\right) \gamma_{\mu}\left( 1-\gamma ^{5} \right) v\left( 2\right) \right] F^{\mu} .
 \end{equation}
 con $F^{\mu}=f_K p^{\mu}$.
 
