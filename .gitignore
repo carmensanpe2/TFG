@@ -3,6 +3,7 @@
 *.gz
 *.toc
 pdf*
+doc*
 *.tex.bak
 svg-inkscape
 svg-extract
