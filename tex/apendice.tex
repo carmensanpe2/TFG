@@ -1,0 +1,178 @@
+\appendix
+\chapter*{Apéndice A}\label{cap:A}
+\addcontentsline{toc}{chapter}{Apéndice A}
+\setcounter{section}{0}
+\renewcommand{\thesection}{A.\arabic{section}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{A.\arabic{table}}
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A.\arabic{equation}}
+
+\section{Transformaciones de Lorentz y Cuadrivectores}\label{sec:Lorentz}
+Las \textit{Transformaciones de Lorentz} (LT) son las expresiones matemáticas encargadas de relacionar un suceso observado desde dos sistemas de referencia inerciales distintos, en base a los postulados de la Teoría de Relatividad Especial. Son las siguientes:
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\begin{align}
+x' &= \dfrac{x-vt}{\sqrt{1-v^2/c^2}} & y' &=y & z' &=z & t' &=\dfrac{t-xv/c^2}{\sqrt{1-v^2/c^2}}\label{eq:TLorentz1}
+\end{align}
+
+La forma más sencilla de expresar las LT es utilizando los cuadrivectores: vectores de cuatro componentes que permiten apreciar fácilmente qué magnitudes son escalares, es decir, invariantes frente a las LT (formulación covariante) \cite{MCR}.
+\begin{align}
+(ct,x, y, z) &=(x^0, x^1, x^2, x^3)=X^\mu & (E,cp_x, cp_y, cp_z) &=(p^0, p^1, p^2, p^3)=P^\mu
+\end{align}
+Hay dos tipos de cuadrivectores:
+\begin{itemize}
+\item Contravariante (índice arriba): $X^\mu=(x^0, x^1, x^2, x^3)=(x^0,\textbf{x}) \rightarrow (t,\vec{\boldsymbol{x}})$
+\item Covariante (índice abajo): $X_\mu=(x_0, x_1, x_2, x_3)=(x_0,-\textbf{x}) \rightarrow (t,-\vec{\boldsymbol{x}})$
+\end{itemize} 
+Para relacionarlos, se usa el tensor métrico $g_{\mu\nu}$ que define la métrica del espacio-tiempo de Minkowski \cite{MCR}.
+\begin{align}
+A_{\mu } &=\sum ^{3}_{\nu =0}g_{\mu \nu }A^{\nu} \equiv g_{\mu \nu }A^{\nu} & A^{\mu } &=\sum ^{3}_{\nu =0}g^{\mu \nu }A_{\nu} \equiv g^{\mu \nu }A_{\nu} \label{eq:metrica}
+\end{align}
+con $g_{\mu\nu} = g^{\mu\nu}$, siendo:
+\begin{equation}
+g_{\mu\nu} = 
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{8pt}
+\begin{pmatrix}
+1 & & &  \\
+& -1 & & \\
+& & -1 & \\
+& & & -1
+\end{pmatrix}
+\endgroup
+\end{equation}
+Además, se cumple lo siguiente:
+\begin{itemize}
+\item Norma de un cuadrivector $X^\mu$: $X^{2}=X^{\mu }X_{\mu }=X_{\mu }X^{\mu }=x_{0}^{2}-\boldsymbol{x}^{2}$
+\item Producto escalar de dos cuadrivectores $A^{\mu}=\left( a^{0},\boldsymbol{a}\right)$ y $B^{\mu}=\left( b_{0},\boldsymbol{b}\right)$: $A\cdot B=A^{\mu }B_{\mu }=A_{\mu }B^{\mu }=a_{0}b^{0}- \boldsymbol{a}\cdot \boldsymbol{b}$. El escalar resultante se dice que es un invariante de Lorentz.
+\end{itemize}
+
+Por lo tanto, las LT para las componentes contravariantes y covariantes, respectivamente, pueden expresarse \cite{MCR} tal que así:
+\begin{align}
+X'^{\mu } &=\Lambda\indices{^\mu _\nu}X^\nu & X'_{\mu } &=\Lambda\indices{_\mu ^\nu}X_\nu \label{eq:LTcovariant}
+\end{align}
+En general, $\Lambda\indices{^\mu _\nu} \neq \Lambda\indices{_\mu ^\nu}$.  Gracias a todo esto, se pueden definir los siguientes operadores:
+\begin{align}
+\partial _{\mu} &= \dfrac{\partial}{\partial x^{\mu}}=\left( \dfrac{\partial }{c\partial t},\vec{\nabla} \right) & \partial ^{\mu } &= \dfrac{\partial }{\partial x_{\mu }}=\left( \dfrac{\partial }{c\partial t},-\vec{\nabla} \right) & \partial ^{\mu }\partial _{\mu }&= \dfrac{\partial ^{2}}{c^{2}\partial t^{2}}-\nabla ^{2} \equiv\square
+\end{align}
+
+\section{Ecuación de Dirac: Matrices y espinores}\label{sec:Dirac}
+La ecuación de Dirac es una función de onda relativista que permite describir partículas fermiónicas ($s=1/2$). En el sistema natural de unidades $c=\hbar =1$, tiene esta expresión:
+\begin{equation}
+i\partial _{t}\Psi = -i\left( \alpha _{1}\dfrac{\partial }{\partial x^{1}}+\alpha _{2}\dfrac{\partial }{\partial x^{2}} + \alpha _{3}\dfrac{\partial }{\partial x^{3}}\right) \Psi +\beta m\Psi \equiv\widehat{H}\Psi \label{eq:Dirac}
+\end{equation}
+Los coeficientes $\alpha_i$ y $\beta$ son matrices. En la base de Dirac-Pauli\footnote{La representación de Dirac-Pauli es la más común, pero otras representaciones son posibles, como la que hace uso de la base de Weyl.} dichas matrices son:
+\begin{align}
+\alpha _{i}=
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} 
+0 & \boldsymbol{\sigma_{i}} \\ \boldsymbol{\sigma_{i}} & 0 \end{pmatrix} \qquad
+\beta =\begin{pmatrix} \mathbb{1} & 0 \\ 0 & -\mathbb{1} \end{pmatrix}
+\endgroup
+\end{align}
+siendo las \boldsymbol{$\sigma_{i}$} las matrices de Pauli:
+\begin{align}
+\sigma _{x}=
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\begin{pmatrix} 
+0 & 1 \\ 1 & 0 \end{pmatrix} \qquad \sigma_y
+\begin{pmatrix} 
+0 & -i \\ i & 0 \end{pmatrix} \qquad
+\sigma_z =\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\endgroup
+\end{align}
+
+A partir de los coeficientes anteriores y utilizando notación en cuadrivectores, se obtienen las \textit{Matrices de Dirac} o \textit{Matrices Gamma}  $\gamma^{\mu}=(\gamma^0, \boldsymbol{\gamma^{i}})=(\gamma^0, \gamma^1, \gamma^2, \gamma^3)$:
+\begin{align}
+\gamma ^0 &\equiv \beta & \gamma ^i &\equiv \beta \alpha_i \hspace{1cm} i=1, 2, 3 \label{eq:matricesDirac}
+\end{align}
+Las matrices de Dirac $\gamma^{\mu}$ satisfacen la relación de anticonmutación \cite{MCR}:
+\begin{equation}
+\left\{ \gamma ^{\mu },\gamma ^{\nu }\right\} =\gamma ^{\mu }\gamma ^{\nu }+\gamma ^{\nu }\gamma ^{\mu }=2g^{\mu \nu }\mathbb{1}\label{eq:anticomm_relation}
+\end{equation}
+\begin{itemize}
+\item $\gamma^{i}$ es unitaria y antihermítica: $\left( \gamma ^{i}\right) ^{-1}=\left( \gamma ^{i}\right) ^{\dagger}=-\gamma ^{i}$
+\item $\gamma^{0}$ es unitaria y hermítica: $\left( \gamma ^{0}\right) ^{-1}=\left( \gamma ^{0}\right) ^{\dagger}=\gamma ^{0}$
+\end{itemize}
+
+Entonces la ecuación de Dirac, sabiendo que $\beta^2=\mathbb{1}$, se reformula como \cite{MCR}:
+\begin{equation}
+i\left( \gamma ^{0}\dfrac{\partial }{\partial t}+\sum ^{3}_{k=1}\gamma ^{k}\dfrac{\partial }{\partial x^{k}}\right) \Psi -m\Psi =0\label{eq:ecDirac_cov}
+\end{equation}
+Usando la notación abreviada conocida como \textit{notación ``slash'' de Feynmann} \cite{MCR}, definimos el siguiente operador:
+\begin{equation}
+\slashed{\partial}=\gamma ^{\mu }\partial ^{\mu }=\gamma ^{\mu }\partial _{\mu }=\gamma ^{0}\partial _{t}+\gamma \nabla
+\end{equation}
+Por lo que la ecuación de Dirac resulta:
+\begin{equation}
+\left(i \slashed{\partial}-m\right) \Psi =0\label{eq:Dirac_final}
+\end{equation}
+Asimismo, para partículas libres, usando que $\widehat{p}^{\mu} \rightarrow i\partial^{\mu} \Rightarrow \slashed{\widehat{p}} \rightarrow i\slashed{\partial}$ \cite{MCR}, la ecuación de Dirac queda:
+\begin{equation}
+\left( \slashed{\widehat{p}}-m\right) \Psi =0\label{eq:Dirac_free}
+\end{equation}
+
+Las soluciones de esta ecuación tienen forma de onda plana y $\Psi$ se representan como autovectores de 4 componentes o bi-espinores, conocidos como \textit{espinores de Dirac} \cite{MCR} y, a su vez, cada bi-espinor puede expresarse en términos de dos espinores de 2 componentes:
+\begin{align}
+\begingroup 
+\renewcommand*{\arraystretch}{0.8}
+\setlength\arraycolsep{10pt}
+\Psi \left( \boldsymbol{x}, t\right) =\begin{pmatrix} \psi_{1} \\ \psi_{2} \\ \psi_{3} \\ \psi_{4} \end{pmatrix}=\begin{pmatrix} u(\boldsymbol{p},s) \\ v(\boldsymbol{p},s) \end{pmatrix}; \qquad u(\boldsymbol{p},s)=\begin{pmatrix} u_{1} \\ u_{2} \end{pmatrix} \qquad
+v(\boldsymbol{p},s)=\begin{pmatrix} v_{1} \\ v_{2}\label{eq:espinores} \end{pmatrix}
+\endgroup
+\end{align}
+El espinor $u(\boldsymbol{p},s)$ corresponde a la solución con valores de energía positivos, que describen partículas, mientras que el espinor $v(\boldsymbol{p},s)$ está asociado a valores negativos de la energía, relacionados con las antipartículas \cite{Donelly}. Cada espinor presenta dos componentes, correspondientes a los dos posibles estados de la tercera componente de espín $s_z=\pm 1/2$. \cite{Bettini} Las soluciones conjugadas se definen como $\overline{u} \equiv u^{\dagger} \gamma^{0}$ y $\overline{v} \equiv v^{\dagger} \gamma^{0}$, respectivamente.
+
+Los espinores $u(\boldsymbol{p},s)$ y $v(\boldsymbol{p},s)$ y sus conjugados cumplen la ecuación de Dirac \cite{Donelly}:
+\begin{equation}
+\begin{aligned}
+(\slashed{p}-m)u(\boldsymbol{p},s) &=0 & (\slashed{p}+m)v(\boldsymbol{p},s) &=0 \\
+\overline{u}(\boldsymbol{p},s)(\slashed{p}-m) &=0 & \overline{v}(\boldsymbol{p},s )(\slashed{p}+m)&=0
+\end{aligned}
+\end{equation}
+La normalización de espinores es \cite{MCR}:
+\begin{align}
+\overline{u}(\boldsymbol{p},s)u(\boldsymbol{p},s) &= 1 & \overline{v}(\boldsymbol{p},s)v(\boldsymbol{p},s) &= -1
+\end{align}
+Y la relación de completitud \cite{MCR}:  %a \cite{Paschos}:
+\begin{equation}
+\sum _{s}\left| u_{\alpha }\left(\boldsymbol{p},s\right) \overline{u}_{\beta }\left(\boldsymbol{p},s\right) -v_{\alpha }\left(\boldsymbol{p},s\right) \overline{v}_{\beta }\left(\boldsymbol{p},s\right) \right| =\delta _{\alpha \beta }
+\end{equation}
+
+Además de las cuatro matrices gamma, existe una quinta matriz importante $\gamma^5$, cuya expresión en la representación de Dirac es:
+\begin{equation}
+\gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3\label{eq:gamma5}
+\end{equation}
+%\equiv \gamma_5
+
+\subsubsection{Covariantes bilineales}\label{sec:trazas}
+Los covariantes bilineales $\widehat{\Gamma}$ son muy útiles para la descripción de un lagrangiano de interacción, al proporcionar información sobre cómo se transforman los espinores. Son los siguientes:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{l*{8}{c}r}
+\hline
+Expresiones de $\widehat{\Gamma}$  & Carácter & Nº. Matrices\\ 
+\hline
+$\widehat{\Gamma}^{S} = \mathbb{1}$ & Escalar (S) & 1\\
+$\widehat{\Gamma}_{\mu}^{V} = \gamma_{\mu}$ & Vectorial (V) & 4 &\\
+$\widehat{\Gamma}^{T}_{\mu\nu} = \hat{\sigma}_{\mu\nu}-\hat{\sigma}_{\nu\mu}$ & Tensorial (T) & 6\\
+$\widehat{\Gamma}_{\mu}^{A} = \gamma_{5}\gamma_{\mu}$ & Vector axial (A) & 4\\
+$\widehat{\Gamma}^{P} = \gamma_{5}$ & Pseudo-vector (P) & 1\\
+\hline
+	\end{tabular}
+\caption[Covariantes bilineales]{Covariantes bilineales. \cite{MCR}, \cite{GreinerRQM}}
+\label{tab:bilinear_covariant}
+\end{table}
+
+con $\hat{\sigma}^{\mu\nu}= \dfrac{i}{2} \left(\gamma^{\mu}\gamma^{\nu} - \gamma^{\nu}\gamma^{\mu} \right)$.
+
+%\sum_s u(\boldsymbol{p},s)\overline{u}(\boldsymbol{p},s) &= (\slashed{p}+m) & \sum_s v(\boldsymbol{p},s)\overline{v}(\boldsymbol{p},s) &= (\slashed{p}-m)
+
+AÑADIR TRAZAS DE LAS MATRICES DE DIRAC Y  CASIMIR'S TRICK
